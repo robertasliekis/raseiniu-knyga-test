@@ -1,6 +1,6 @@
 const initialState = {
   contentIndex: 0,
-  contentOpen: false,
+  contentOpen: true,
 };
 
 const mouseEnterContent = (state = initialState, action) => {

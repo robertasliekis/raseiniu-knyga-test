@@ -25,14 +25,14 @@ export class ChangePageButtons extends Component {
   mouseEnterHandler = () => {
     this.setState({ hovered: true });
     if (!this.props.movieOpen) {
-      this.handImageRef.current.classList.add("hand-image-animation");
+      //   this.handImageRef.current.classList.add("hand-image-animation");
     }
   };
 
   mouseLeaveHandler = () => {
     this.setState({ hovered: false });
     this.clearTimer();
-    this.handImageRef.current.classList.remove("hand-image-animation");
+    //  this.handImageRef.current.classList.remove("hand-image-animation");
   };
 
   onTimeout = () => {
@@ -84,7 +84,7 @@ export class ChangePageButtons extends Component {
           <div className="reset-box reset-box-top"></div>
           <div className="reset-box reset-box-bottom"></div>
         </div>
-        <div className="hand-image hand-image-animation" ref={this.handImageRef}></div>
+        {/* <div className="hand-image hand-image-animation" ref={this.handImageRef}></div> */}
       </div>
     );
   }

@@ -13,19 +13,18 @@ const hoverZones = [
         height: 37,
         images: [
           {
+            png: true,
             imageText: [
               "Tado Daugirdo portretas, A. Žmuidzinavičius. 1910, drobė, aliejus, 67x46. Nacionalinis M. K. Čiurlionio dailės muziejus (MKČDM)",
               "Portrait of Tadas Daugirdas, A. Žmuidzinavičius. 1910, canvas, oil, 67x46. M. K. Čiurlionis National Museum of Art (MKČDM)",
             ],
             description: [
-              `Tadas Daugirdas – novatorius, tyrėjas, kūrėjas
-          Tadas Daugirdas – dailininkas, archeologas, numizmatas, etnografas, muziejininkas, publicistas, visuomenininkas, rašytojas, Raseinių krašto senovės tyrėjas.
+              `Tadas Daugirdas – dailininkas, archeologas, numizmatas, etnografas, muziejininkas, publicistas, visuomenininkas, rašytojas, Raseinių krašto senovės tyrėjas.
           
           Daugirdas buvo nuoseklus mokslininkas, sistemingai tvarkė medžiagą, rašė tyrinėjimų dienoraščius ir juos iliustravo, registravo kultūros paminklus, tyrinėjo kapinynus, piliakalnius ir kitus istorinius paminklus Lietuvoje. Jis skatino pažinti Tėvynę, domėtis protėvių istorija, didžiuotis Lietuva ir jos žmonėmis.
           Mokslininko credo: „Gerai yra svetimas šalis pažinti, o savo tai jau priedermė.“
           `,
-              `Tadas Daugirdas was an innovator, researcher and creator
-        Tadas Daugirdas was a painter, archaeologist, numismatist, ethnographer, museologist, publicist, public figure, writer, researcher of Raseiniai region history.
+              `Tadas Daugirdas was a painter, archaeologist, numismatist, ethnographer, museologist, publicist, public figure, writer, researcher of Raseiniai region history.
         Daugirdas was a consistent scientist, systematically managed the data, wrote research diaries and illustrated them, registered cultural monuments, researched burial grounds, mounds and other historical monuments in Lithuania. He encouraged getting to know the motherland, taking an interest in the history of ancestors, being proud of Lithuania and its people.
         The scientist's credo was "A good thing is to know foreign countries, but to know your own one is already a duty."
         `,
@@ -57,53 +56,29 @@ const hoverZones = [
           {
             imageText: [],
             description: [
-              `Daugirdų legitimizacijos knygos titulinis puslapis – Herbas „Gulbė“. 1799 m.
-        Daugirdų „Gulbė“ ant dvigalvio erelio krūtinės  – carinės Rusijos valdymo laikotarpio antspaudas.
-        Herbo „Gulbė“  – signetas, vartotas antspauduoti dokumentus ar laiškus, saugomas Daugirdo provaikaitės šeimoje.
-        `,
-              `The Swan coat of arms, 1799. The title page of the Daugirdai legitimation book.
-        The Swan of Daugirdai on the chest of a double-headed eagle. The seal of the reign of tsarist Russia.
-        The “Swan” coat of arms was a sign used to stamp documents or letters. Now it is kept in the family of Daugirdas granddaughter.
-        `,
+              "Daugirdų legitimizacijos knygos titulinis puslapis – Herbas „Gulbė“. 1799 m. Daugirdų „Gulbė“ ant dvigalvio erelio krūtinės  – carinės Rusijos valdymo laikotarpio antspaudas. Herbo „Gulbė“  – signetas, vartotas antspauduoti dokumentus ar laiškus, saugomas Daugirdo provaikaitės šeimoje.",
+              "The Swan coat of arms, 1799. The title page of the Daugirdai legitimation book. The Swan of Daugirdai on the chest of a double-headed eagle. The seal of the reign of tsarist Russia. The “Swan” coat of arms was a sign used to stamp documents or letters. Now it is kept in the family of Daugirdas granddaughter.",
             ],
           },
           {
             imageText: [],
             description: [
-              `Daugirdų legitimizacijos knygos titulinis puslapis – Herbas „Gulbė“. 1799 m.
-        Daugirdų „Gulbė“ ant dvigalvio erelio krūtinės  – carinės Rusijos valdymo laikotarpio antspaudas.
-        Herbo „Gulbė“  – signetas, vartotas antspauduoti dokumentus ar laiškus, saugomas Daugirdo provaikaitės šeimoje.
-        `,
-              `The Swan coat of arms, 1799. The title page of the Daugirdai legitimation book.
-        The Swan of Daugirdai on the chest of a double-headed eagle. The seal of the reign of tsarist Russia.
-        The “Swan” coat of arms was a sign used to stamp documents or letters. Now it is kept in the family of Daugirdas granddaughter.
-        `,
+              "Daugirdų legitimizacijos knygos titulinis puslapis – Herbas „Gulbė“. 1799 m. Daugirdų „Gulbė“ ant dvigalvio erelio krūtinės  – carinės Rusijos valdymo laikotarpio antspaudas. Herbo „Gulbė“  – signetas, vartotas antspauduoti dokumentus ar laiškus, saugomas Daugirdo provaikaitės šeimoje.",
+              "The Swan coat of arms, 1799. The title page of the Daugirdai legitimation book. The Swan of Daugirdai on the chest of a double-headed eagle. The seal of the reign of tsarist Russia. The “Swan” coat of arms was a sign used to stamp documents or letters. Now it is kept in the family of Daugirdas granddaughter.",
             ],
           },
           {
             imageText: [],
             description: [
-              `Daugirdų legitimizacijos knygos titulinis puslapis – Herbas „Gulbė“. 1799 m.
-        Daugirdų „Gulbė“ ant dvigalvio erelio krūtinės  – carinės Rusijos valdymo laikotarpio antspaudas.
-        Herbo „Gulbė“  – signetas, vartotas antspauduoti dokumentus ar laiškus, saugomas Daugirdo provaikaitės šeimoje.
-        `,
-              `The Swan coat of arms, 1799. The title page of the Daugirdai legitimation book.
-        The Swan of Daugirdai on the chest of a double-headed eagle. The seal of the reign of tsarist Russia.
-        The “Swan” coat of arms was a sign used to stamp documents or letters. Now it is kept in the family of Daugirdas granddaughter.
-        `,
+              "Daugirdų legitimizacijos knygos titulinis puslapis – Herbas „Gulbė“. 1799 m. Daugirdų „Gulbė“ ant dvigalvio erelio krūtinės  – carinės Rusijos valdymo laikotarpio antspaudas. Herbo „Gulbė“  – signetas, vartotas antspauduoti dokumentus ar laiškus, saugomas Daugirdo provaikaitės šeimoje.",
+              "The Swan coat of arms, 1799. The title page of the Daugirdai legitimation book. The Swan of Daugirdai on the chest of a double-headed eagle. The seal of the reign of tsarist Russia. The “Swan” coat of arms was a sign used to stamp documents or letters. Now it is kept in the family of Daugirdas granddaughter.",
             ],
           },
           {
             imageText: [],
             description: [
-              `Daugirdų legitimizacijos knygos titulinis puslapis – Herbas „Gulbė“. 1799 m.
-        Daugirdų „Gulbė“ ant dvigalvio erelio krūtinės  – carinės Rusijos valdymo laikotarpio antspaudas.
-        Herbo „Gulbė“  – signetas, vartotas antspauduoti dokumentus ar laiškus, saugomas Daugirdo provaikaitės šeimoje.
-        `,
-              `The Swan coat of arms, 1799. The title page of the Daugirdai legitimation book.
-        The Swan of Daugirdai on the chest of a double-headed eagle. The seal of the reign of tsarist Russia.
-        The “Swan” coat of arms was a sign used to stamp documents or letters. Now it is kept in the family of Daugirdas granddaughter.
-        `,
+              "Daugirdų legitimizacijos knygos titulinis puslapis – Herbas „Gulbė“. 1799 m. Daugirdų „Gulbė“ ant dvigalvio erelio krūtinės  – carinės Rusijos valdymo laikotarpio antspaudas. Herbo „Gulbė“  – signetas, vartotas antspauduoti dokumentus ar laiškus, saugomas Daugirdo provaikaitės šeimoje.",
+              "The Swan coat of arms, 1799. The title page of the Daugirdai legitimation book. The Swan of Daugirdai on the chest of a double-headed eagle. The seal of the reign of tsarist Russia. The “Swan” coat of arms was a sign used to stamp documents or letters. Now it is kept in the family of Daugirdas granddaughter.",
             ],
           },
         ],
@@ -115,6 +90,7 @@ const hoverZones = [
         height: 24,
         images: [
           {
+            png: true,
             imageText: [],
             description: [
               `Įdomu: Istoriniai faktai liudija, kad Vilniaus vaivada Daugirdas (pakrikštytas Jonu) ir jo tėvas Dedigaudas Salkaitis (pakrikštytas Jurgiu) jau iki 1413 m. naudojosi „Gulbė“  herbu. Jonui Daugirdui buvo priskirtas naujas herbas „Jaučio galva” (Pomian), jis panaudotas 1433 m. antspaude. Tačiau jo palikuonys naudojosi senuoju giminės herbu „Gulbė“.`,
@@ -135,7 +111,7 @@ const hoverZones = [
         height: 33,
         images: [
           {
-            imageText: ["Plemborgo dvaro nuotrauka iš lėktuvo. XX a. I p.", "Photo of Plemborg manor from an airplane. 1st part of 20th century."],
+            imageText: ["Viršuje - Plemborgo dvaro nuotrauka iš lėktuvo. XX a. I p.", "Photo of Plemborg manor from an airplane. 1st part of 20th century."],
             description: [
               "T. Daugirdo draugas lenkų istorikas Ludwik Krzywicki rašė: ‚‚Vienas Daugirdo protėvių iš Lenkijos karalių ir Lietuvos didžiųjų kunigaikščių gavo gabalą žemės prie Dubysos, prie kurios mūsų laikais išsidėstė Plemborgo plotai – dvaras, kuris apie porą šimtų metų neišėjo iš palikuonių rankų. Žemių židinys buvo Plemborgas, lietuviškai Plembaris, nuo mažo upelio Plembis.... Dvaras buvo sulipdytas iš priestatų, daugiaaukštis,…, su dviem dideliais svečių kambariais pirmame aukšte, o žemutiniame aukšte su dideliu valgomuoju, milžinišku salonu, kambariais vyresniesiems giminės atstovams, kambarėliais jaunimui.“ ",
               "A friend of T. Daugirdas, Ludwik Krzywicki, a Polish historian, once wrote “One of the ancestors of Daugirdas from the kings of Poland and the Grand Dukes of Lithuania received a piece of land near the river Dubysa, where later the manor of Plemborg was located.  The manor did not pass from the hands of the descendants for about a couple of hundred years. The centre of the territory was Plemborg or Plembaris in Lithuanian, from the small stream Plembis .... The manor was glued from the annexes, multi-storey, ..., with two large guest rooms on the first floor and large dining room, a huge salon, rooms for the senior family members and young people on the ground floor.”",
@@ -166,16 +142,7 @@ const hoverZones = [
         images: [
           {
             imageText: [],
-            description: [
-              `Dailininko Antano
-           Žmuidzinavičiaus 
-           (1876–1966) tapytas 
-           Plemborgo dvaras. `,
-              `The Plemborg manor. 
-              Painted by the artist 
-              Antanas Žmuidzinavičius 
-              (1876–1966).`,
-            ],
+            description: ["Dailininko Antano Žmuidzinavičiaus (1876–1966) tapytas Plemborgo dvaras.", "The Plemborg manor. Painted by the artist Antanas Žmuidzinavičius (1876–1966)."],
           },
           {
             imageText: [],
@@ -195,11 +162,17 @@ const hoverZones = [
           {
             imageText: [],
             description: [
-              "Vyriausias archeologo Daugirdo sūnus Mykolas (1884-1952) ,,buvo pasiutęs automobilistas. Šeimoje kalbama, kad jis buvo pirmasis Žemaitijoje, įsigijęs automobilį. Jeigu ne Žemaitijoje, tai Raseinių krašte - tikrai. Kai tik galėjo nusipirkti Ford Model T, Mykolas tuoj jį įsigijo. Niekas apylinkėse automobilių neturėjo. Kuras buvo žibalas, jį pirko pas žydą Ariogalos krautuvėje, o važinėjo kas dieną, su reikalais ir be reikalų. Mykolas važinėjo į Raseinius, Kauną, Vilnių, Minską... Imdavo šeimos narius pasivažinėjimui.“",
+              "Vyriausias archeologo Daugirdo sūnus Mykolas (1884-1952) ,buvo pasiutęs automobilistas. Šeimoje kalbama, kad jis buvo pirmasis Žemaitijoje, įsigijęs automobilį. Jeigu ne Žemaitijoje, tai Raseinių krašte - tikrai. Kai tik galėjo nusipirkti Ford Model T, Mykolas tuoj jį įsigijo. Niekas apylinkėse automobilių neturėjo. Kuras buvo žibalas, jį pirko pas žydą Ariogalos krautuvėje, o važinėjo kas dieną, su reikalais ir be reikalų. Mykolas važinėjo į Raseinius, Kauną, Vilnių, Minską... Imdavo šeimos narius pasivažinėjimui.“",
               `Mykolas (1884-1952), who was the eldest son of the archaeologist Daugirdas, "was a furious motorist. It is said in the family, that he was the first in Samogitia to buy a car. If not in Samogitia, then in Raseiniai region for sure. As soon as he could buy a Ford Model T, Mykolas immediately bought it. No one in the area had a car. The fuel was kerosene, he bought it from a Jew in a store in Ariogala, and he drove every day, despite having a reason or not. Mykolas travelled to Raseiniai, Kaunas, Vilnius, Minsk ... He used to take family members for a ride.”`,
             ],
           },
-          { imageText: [], description: ["Daugirdai automobilyje prie dvaro paradinio įėjimo 1914 m. ir 1931 m.", "The Daugirdai in the car at the main entrance of the manor in 1914 and 1931."] },
+          {
+            imageText: [],
+            description: [
+              "Vyriausias archeologo Daugirdo sūnus Mykolas (1884-1952) ,buvo pasiutęs automobilistas. Šeimoje kalbama, kad jis buvo pirmasis Žemaitijoje, įsigijęs automobilį. Jeigu ne Žemaitijoje, tai Raseinių krašte - tikrai. Kai tik galėjo nusipirkti Ford Model T, Mykolas tuoj jį įsigijo. Niekas apylinkėse automobilių neturėjo. Kuras buvo žibalas, jį pirko pas žydą Ariogalos krautuvėje, o važinėjo kas dieną, su reikalais ir be reikalų. Mykolas važinėjo į Raseinius, Kauną, Vilnių, Minską... Imdavo šeimos narius pasivažinėjimui.“",
+              `Mykolas (1884-1952), who was the eldest son of the archaeologist Daugirdas, "was a furious motorist. It is said in the family, that he was the first in Samogitia to buy a car. If not in Samogitia, then in Raseiniai region for sure. As soon as he could buy a Ford Model T, Mykolas immediately bought it. No one in the area had a car. The fuel was kerosene, he bought it from a Jew in a store in Ariogala, and he drove every day, despite having a reason or not. Mykolas travelled to Raseiniai, Kaunas, Vilnius, Minsk ... He used to take family members for a ride.”`,
+            ],
+          },
         ],
       },
       {
@@ -380,6 +353,7 @@ const hoverZones = [
         images: [
           {
             imageText: [],
+            png: true,
             description: [
               "Vasarodamas Žemaitijoje, T. Daugirdas susidomėjo archeologiniais radiniais  ir 1881 m. pradėjo archeologinius kasinėjimus Jasnogurkos palivarko (Paluknys) žemėse. Daugirdas buvo nuoseklus mokslininkas, sistemingai tvarkė medžiagą, rašė tyrinėjimų dienoraščius ir juos iliustravo, registravo kultūros paminklus, įvairiose Lietuvos vietose tyrinėjo kapinynus, piliakalnius ir kitus istorinius paminklus įvairiose Lietuvos vietose.",
               "While spending summer in Samogitia, T. Daugirdas became interested in archeological findings and in 1881 started archeological excavations in the lands of Jasnogurka folwark (Paluknys). Daugirdas was a consistent scientist, systematically managed the data, wrote research diaries and illustrated them, registered cultural monuments, researched cemeteries, mounds and other historical monuments in various parts of Lithuania.",
@@ -437,6 +411,7 @@ const hoverZones = [
         height: 33,
         images: [
           {
+            png: true,
             imageText: [],
             description: [
               "T. Daugirdo leidinys „Priešistorinių laikų paminklai Žemaitijoje” dedikuotas Mykolui Eustachijui Brenšteinui – Lietuvos, daugiausia Žemaitijos istorijos ir kultūros tyrinėtojui, archeologui, etnografui, bibliotekininkui. 1889 m.",
@@ -453,6 +428,7 @@ const hoverZones = [
         height: 26,
         images: [
           {
+            png: true,
             imageText: [],
             description: [
               "Apie savo archeologinius tyrinėjimus T. Daugirdas rašė į lenkiškus žurnalus „Kłosy“, „Pamiętnik fizyograficzny“, „Wisła“. Jis buvo išrinktas Lenkijos MA (Krokuvos) nariu korespondentu, Kuršo literatūros ir meno draugijos nariu ir kt.",
@@ -531,23 +507,15 @@ const hoverZones = [
           {
             imageText: [],
             description: [
-              `Lietuvos mokslų akademijos Vrublevskių bibliotekoje saugomas 1908 m. T. Daugirdo sudarytas Archeologinis Dubysos apylinkių nuo Betygalos iki Survilų žemėlapis. 
-      Mapka archeologiczna okolicy nad–Dubiskiej: od miasteczka Betygoły do okolicy Surwiłły /Tadeusz Dowgird. Warszawa,1909.
-      `,
-              `The Archaeological map of Dubysa area from Betygala to Survilai was compiled by T. Daugirdas in 1908 and is stored in the Wroblewski Library of the Lithuanian Academy of Sciences.
-              Mapka archeologiczna okolicy nad–Dubiskiej: od miasteczka Betygoły do okolicy Surwiłły /Tadeusz Dowgird. Warszawa,1909.
-              `,
+              "Lietuvos mokslų akademijos Vrublevskių bibliotekoje saugomas 1908 m. T. Daugirdo sudarytas Archeologinis Dubysos apylinkių nuo Betygalos iki Survilų žemėlapis. <br><br> <span>Mapka archeologiczna okolicy nad–Dubiskiej: od miasteczka Betygoły do okolicy Surwiłły /Tadeusz Dowgird. Warszawa,1909.</span>",
+              "The Archaeological map of Dubysa area from Betygala to Survilai was compiled by T. Daugirdas in 1908 and is stored in the Wroblewski Library of the Lithuanian Academy of Sciences.<br><br><span>Mapka archeologiczna okolicy nad–Dubiskiej: od miasteczka Betygoły do okolicy Surwiłły /Tadeusz Dowgird. Warszawa,1909.</span>",
             ],
           },
           {
             imageText: [],
             description: [
-              `Lietuvos mokslų akademijos Vrublevskių bibliotekoje saugomas 1908 m. T. Daugirdo sudarytas Archeologinis Dubysos apylinkių nuo Betygalos iki Survilų žemėlapis. 
-      Mapka archeologiczna okolicy nad–Dubiskiej: od miasteczka Betygoły do okolicy Surwiłły /Tadeusz Dowgird. Warszawa,1909.
-      `,
-              `The Archaeological map of Dubysa area from Betygala to Survilai was compiled by T. Daugirdas in 1908 and is stored in the Wroblewski Library of the Lithuanian Academy of Sciences.
-              Mapka archeologiczna okolicy nad–Dubiskiej: od miasteczka Betygoły do okolicy Surwiłły /Tadeusz Dowgird. Warszawa,1909.
-              `,
+              "Lietuvos mokslų akademijos Vrublevskių bibliotekoje saugomas 1908 m. T. Daugirdo sudarytas Archeologinis Dubysos apylinkių nuo Betygalos iki Survilų žemėlapis. <br><br> <span>Mapka archeologiczna okolicy nad–Dubiskiej: od miasteczka Betygoły do okolicy Surwiłły /Tadeusz Dowgird. Warszawa,1909.</span>",
+              "The Archaeological map of Dubysa area from Betygala to Survilai was compiled by T. Daugirdas in 1908 and is stored in the Wroblewski Library of the Lithuanian Academy of Sciences.<br><br><span>Mapka archeologiczna okolicy nad–Dubiskiej: od miasteczka Betygoły do okolicy Surwiłły /Tadeusz Dowgird. Warszawa,1909.</span>",
             ],
           },
         ],
@@ -560,6 +528,7 @@ const hoverZones = [
         images: [
           {
             imageText: [],
+            png: true,
             description: [
               "1903 m. knyga „Alfavitnij spisok nasielionych miest Kovenskoi gubernii“ („Abėcėlinis Kauno gubernijos gyventojų sąrašas“). Čia įrašytas Plemborgo dvaras turintis 40 gyventojų.",
               "The 1903 book “Alfavitnij spisok nasielionych miest Kovenskoi gubernii” (The Alphabetical List of the Residents of Kaunas Governorate). The Plemborg manor with 40 inhabitants is listed here.",
@@ -600,6 +569,7 @@ const hoverZones = [
         images: [
           {
             imageText: [],
+            png: true,
             description: [
               "XX a. pradžioje Daugirdas ėmė reikštis ne tik kaip muziejininkas ir archeologas, bet ir kaip rašytojas. Išspausdino eilę novelių, scenos veikalų, vadovavo „Dainos“ draugijai, režisavo lietuviškus saviveiklinius vaidinimus, pats piešė dekoracijas. Raseinių kraštui aktualus Daugirdo scenos veikalas „Girkalnio užgavėnės”, kuriame randame to meto etnografinių detalių ir socialinių santykių atspindžių.",
               'At the beginning of 20th century Daugirdas began to express himself not only as a museologist and archaeologist, but also as a writer. He published a number of short stories, stage works, was the head of the society "Daina", directed Lithuanian amateur performances and drew the decorations himself. The stage work “Mardi Gras of Girkalnis”, in which we find reflections on the ethnographic details and social relations of that time, is meaningful to Raseiniai region.',
@@ -691,10 +661,10 @@ const hoverZones = [
         ],
       },
       {
-        posX: 79,
-        posY: 48,
-        width: 13,
-        height: 18,
+        posX: 53,
+        posY: 60,
+        width: 24,
+        height: 25,
         images: [
           {
             imageText: [],
@@ -706,10 +676,10 @@ const hoverZones = [
         ],
       },
       {
-        posX: 53,
-        posY: 60,
-        width: 24,
-        height: 25,
+        posX: 79,
+        posY: 48,
+        width: 13,
+        height: 18,
         images: [
           {
             imageText: [],
@@ -834,6 +804,7 @@ const hoverZones = [
         images: [
           {
             imageText: [],
+            png: true,
             description: [
               "2001 m. Lietuvos heraldikos komisija atkūrė Ariogalos herbą pagal piešinį, rastą Lietuvos Metrikoje. Sukryžiuoti ašmenimis į viršų kardai simbolizuoja gyventojų ryžtą ginti miesto ir valstybės laisvę. ",
               "The Lithuanian Heraldry Commission restored the coat of arms of Ariogala according to the drawing found in the Metrics of Lithuania in 2001. The swords crossed with the blades facing upwards symbolize the determination of the population to defend the freedom of the city and the state.",
@@ -842,10 +813,11 @@ const hoverZones = [
         ],
       },
       {
-        posX: 74,
-        posY: 12,
-        width: 14,
-        height: 41,
+        posX: 55,
+        posY: 62,
+        width: 26,
+        height: 22,
+
         images: [
           {
             imageText: [],
@@ -856,7 +828,7 @@ const hoverZones = [
           },
         ],
       },
-      { posX: 55, posY: 62, width: 26, height: 22, images: [{ imageText: [], description: ["Daugirdų giminės medis", "The Daugirdai family tree"] }] },
+      { posX: 74, posY: 12, width: 14, height: 41, images: [{ imageText: [], description: ["Daugirdų giminės medis", "The Daugirdai family tree"] }] },
     ],
   },
 ];

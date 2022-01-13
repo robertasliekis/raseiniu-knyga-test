@@ -19,6 +19,7 @@ export class InfoWindow extends Component {
       activeVideo: null,
       videoPlaying: false,
       activePage: 0,
+      imageFormat: "jpg",
     };
 
     this.windowContainerRef = React.createRef();
@@ -45,6 +46,7 @@ export class InfoWindow extends Component {
         this.setState({
           activeImageIndex: this.state.hoveredImageIndex,
           imageDescription: this.state.galleryImages[this.state.hoveredImageIndex].description,
+          imageFormat: this.state.galleryImages[this.state.hoveredImageIndex].png ? "png" : "jpg",
         });
         break;
 
@@ -174,7 +176,13 @@ export class InfoWindow extends Component {
       let galleryImages = loadedContent.images;
       let imageDescription = galleryImages[this.state.activeImageIndex].description;
       let imageTextBelow = galleryImages[this.state.activeImageIndex].imageText;
-      this.setState({ galleryImages: galleryImages, imageDescription: imageDescription, imageTextBelow: imageTextBelow, activePage: this.props.page });
+      this.setState({
+        galleryImages: galleryImages,
+        imageDescription: imageDescription,
+        imageTextBelow: imageTextBelow,
+        activePage: this.props.page,
+        imageFormat: galleryImages[this.state.hoveredImageIndex].png ? "png" : "jpg",
+      });
     }
   }
 
@@ -189,7 +197,7 @@ export class InfoWindow extends Component {
                   onError={() => {
                     this.addDefaultSrc();
                   }}
-                  src={require(`../images/gallery/${this.state.activePage + 1}/${this.props.contentIndex + 1}_${this.state.activeImageIndex + 1}.jpg`)}
+                  src={require(`../images/gallery/${this.state.activePage + 1}/${this.props.contentIndex + 1}_${this.state.activeImageIndex + 1}.${this.state.imageFormat}`)}
                   className="main-image"
                   alt=""
                 />
@@ -217,7 +225,7 @@ export class InfoWindow extends Component {
               ) : null}
               {this.state.imageTextBelow.length ? <div className="text-below-image">{this.state.imageTextBelow[this.props.languageIndex]}</div> : null}
             </div>
-            {this.state.imageDescription.length ? <div className="content content-right">{this.state.imageDescription[this.props.languageIndex]}</div> : null}
+            {this.state.imageDescription.length ? <div className="content content-right" dangerouslySetInnerHTML={{ __html: this.state.imageDescription[this.props.languageIndex] }}></div> : null}
             {this.state.activeVideo ? (
               <div className="video-container">
                 <video autoPlay ref={this.videoRef} key={`videoKey${this.props.languageIndex}${this.props.page}`}>
