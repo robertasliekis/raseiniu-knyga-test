@@ -992,8 +992,8 @@ body {
       }
 
       &.corner {
-        width: 16%;
-        height: 32%;
+        width: 15.1%;
+        height: 31%;
         right: 0;
         bottom: 0;
       }
@@ -1001,10 +1001,10 @@ body {
   }
 
   .ornaments-popup-animation {
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-name: video-ornament-animation;
-    animation-delay: $hover-zone-delay;
+    animation-delay: calc(#{$hover-zone-delay} + 5.5s);
 
     @keyframes video-ornament-animation {
       0% {

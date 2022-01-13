@@ -8,7 +8,6 @@ import { connect } from "react-redux";
 
 import "./App.css";
 //"homepage":"https://robertasliekis.github.io/raseiniu-knyga-test/",
-//"homepage": "http://localhost:3000/",
 
 function App() {
   return (

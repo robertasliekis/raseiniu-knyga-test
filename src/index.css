@@ -1280,21 +1280,21 @@ body {
 }
 
 .video-background-container .videos-animated-wrapper .video-animated.corner {
-  width: 16%;
-  height: 32%;
+  width: 15.1%;
+  height: 31%;
   right: 0;
   bottom: 0;
 }
 
 .video-background-container .ornaments-popup-animation {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-name: video-ornament-animation;
           animation-name: video-ornament-animation;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  -webkit-animation-delay: calc(5s + 5.5s);
+          animation-delay: calc(5s + 5.5s);
 }
 
 @-webkit-keyframes video-ornament-animation {

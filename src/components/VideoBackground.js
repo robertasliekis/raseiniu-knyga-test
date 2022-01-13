@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import videoIntro from "../info/videoImport";
 import videoAnimatedLeft from "../videos/animated/left.mp4";
 import videoAnimatedRight from "../videos/animated/right.mp4";
-import videoAnimatedCorner from "../videos/animated/right.mp4";
+import videoAnimatedCorner from "../videos/animated/corner.mp4";
 
 export class VideoBackground extends Component {
   constructor(props) {
