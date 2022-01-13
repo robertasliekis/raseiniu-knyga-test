@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/raseiniu-knyga-test/static/css/main.5a7c5bc9.chunk.css",
-    "main.js": "/raseiniu-knyga-test/static/js/main.bf089785.chunk.js",
-    "main.js.map": "/raseiniu-knyga-test/static/js/main.bf089785.chunk.js.map",
+    "main.js": "/raseiniu-knyga-test/static/js/main.afdeb1c2.chunk.js",
+    "main.js.map": "/raseiniu-knyga-test/static/js/main.afdeb1c2.chunk.js.map",
     "runtime-main.js": "/raseiniu-knyga-test/static/js/runtime-main.ad67afee.js",
     "runtime-main.js.map": "/raseiniu-knyga-test/static/js/runtime-main.ad67afee.js.map",
     "static/js/2.a5eaf28c.chunk.js": "/raseiniu-knyga-test/static/js/2.a5eaf28c.chunk.js",
     "static/js/2.a5eaf28c.chunk.js.map": "/raseiniu-knyga-test/static/js/2.a5eaf28c.chunk.js.map",
     "index.html": "/raseiniu-knyga-test/index.html",
-    "precache-manifest.1d4efa16ab48bd694cb096c44b9bcfa3.js": "/raseiniu-knyga-test/precache-manifest.1d4efa16ab48bd694cb096c44b9bcfa3.js",
+    "precache-manifest.795d13953adffed6aaad7e03a24d7cc5.js": "/raseiniu-knyga-test/precache-manifest.795d13953adffed6aaad7e03a24d7cc5.js",
     "service-worker.js": "/raseiniu-knyga-test/service-worker.js",
     "static/css/main.5a7c5bc9.chunk.css.map": "/raseiniu-knyga-test/static/css/main.5a7c5bc9.chunk.css.map",
     "static/js/2.a5eaf28c.chunk.js.LICENSE.txt": "/raseiniu-knyga-test/static/js/2.a5eaf28c.chunk.js.LICENSE.txt",
@@ -48,7 +48,7 @@
     "static/media/corner.mp4": "/raseiniu-knyga-test/static/media/corner.5ba14134.mp4",
     "static/media/left.mp4": "/raseiniu-knyga-test/static/media/left.16d49700.mp4",
     "static/media/page1.mp4": "/raseiniu-knyga-test/static/media/page1.a5b1bef9.mp4",
-    "static/media/page10.mp4": "/raseiniu-knyga-test/static/media/page10.7be5214d.mp4",
+    "static/media/page10.mp4": "/raseiniu-knyga-test/static/media/page10.c336863f.mp4",
     "static/media/page2.mp4": "/raseiniu-knyga-test/static/media/page2.18832abd.mp4",
     "static/media/page3.mp4": "/raseiniu-knyga-test/static/media/page3.c769f622.mp4",
     "static/media/page4.mp4": "/raseiniu-knyga-test/static/media/page4.d5806a8d.mp4",
@@ -63,6 +63,6 @@
     "static/js/runtime-main.ad67afee.js",
     "static/js/2.a5eaf28c.chunk.js",
     "static/css/main.5a7c5bc9.chunk.css",
-    "static/js/main.bf089785.chunk.js"
+    "static/js/main.afdeb1c2.chunk.js"
   ]
 }
