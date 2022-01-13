@@ -85,6 +85,7 @@ export class HoverZones extends Component {
         this.clearTimer();
       }
     }
+
     if (this.props.page !== prevProps.page || this.props.language !== prevProps.language) {
       this.hoverZonesContainerRef.current.classList.remove("hover-zones-animation-class");
       this.hoverZonesContainerRef.current.classList.add("hover-zones-animation-class");
@@ -99,6 +100,7 @@ export class HoverZones extends Component {
     let posX = (e.pageX / window.screen.availWidth) * 100;
     let posY = (e.pageY / window.screen.availHeight) * 100;
     this.setState({ posX: posX, posY: posY });
+
     if (this.state.posX && this.state.posY && true) {
       console.log("start");
       console.log(Math.floor(this.state.posX), Math.floor(this.state.posY));
@@ -107,9 +109,7 @@ export class HoverZones extends Component {
   }
 
   render() {
-    const plantContainerNumbers = [1, 2, 3, 4];
-    const ornamentHoverZones = ["left", "right"];
-    const plantNumbers = [this.props.page * 4 - 3, this.props.page * 4 - 2, this.props.page * 4 - 1, this.props.page * 4];
+    const ornamentHoverZones = ["left", "right", "corner"];
 
     return (
       <div className="hover-zones-container" ref={this.hoverZonesContainerRef} key={`hoverZonesKey${this.props.page}${this.props.language}`} onClick={(e) => this.zoneCoordinatesClicked(e)}>
@@ -134,31 +134,9 @@ export class HoverZones extends Component {
             ></div>
           );
         })}
-        <div className="btn btn-language">
+        <div className="btn btn-language" onMouseEnter={() => this.mouseEnterHandler("language")} onMouseLeave={this.mouseLeaveHandler}>
+          <div className={`language ${this.props.language}`}></div>
           <div className="white-box-hover-border"></div>
-          <div className={`language ${this.props.language}`} onMouseEnter={() => this.mouseEnterHandler("language")} onMouseLeave={this.mouseLeaveHandler}></div>
-        </div>
-        {/*  OLD CODE BELOW */}
-        <div className="plants-wrapper" style={{ display: "none" }}>
-          <div className="hover-zone corner-zone" id="corner1" onMouseEnter={(event) => this.mouseEnterHandler(event, "corner")} onMouseLeave={this.mouseLeaveHandler}></div>
-          <div className="hover-zone corner-zone" id="corner2" onMouseEnter={(event) => this.mouseEnterHandler(event, "corner")} onMouseLeave={this.mouseLeaveHandler}></div>
-          <div className="plant-zone-wrapper">
-            {plantContainerNumbers.map((number, index) => {
-              return (
-                <div
-                  className={`plant-zone plant${number} hover-zone`}
-                  id={`plant${plantNumbers[index]}`}
-                  key={`plant${number}`}
-                  onMouseEnter={(event) => this.mouseEnterHandler(event, "plant")}
-                  onMouseLeave={this.mouseLeaveHandler}
-                >
-                  <div className="white-box" id={`plant${plantNumbers[index]}`}></div>
-                </div>
-              );
-            })}
-          </div>
-          <div className="hover-zone corner-zone" id="corner3" onMouseEnter={(event) => this.mouseEnterHandler(event, "corner")} onMouseLeave={this.mouseLeaveHandler}></div>
-          <div className="hover-zone corner-zone" id="corner4" onMouseEnter={(event) => this.mouseEnterHandler(event, "corner")} onMouseLeave={this.mouseLeaveHandler}></div>
         </div>
       </div>
     );

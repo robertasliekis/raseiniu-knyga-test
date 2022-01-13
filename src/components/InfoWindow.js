@@ -23,13 +23,13 @@ export class InfoWindow extends Component {
 
     this.windowContainerRef = React.createRef();
     this.windowButtonsRef = React.createRef();
-    this.imageContainerRef = React.createRef();
     this.windowContentRef = React.createRef();
     this.blockOverlayRef = React.createRef();
     this.blockOverlayMovieRef = React.createRef();
     this.windowMovieContainerRef = React.createRef();
     this.videoRef = React.createRef();
   }
+
   mouseEnterHandler = (type) => {
     this.setState({ hovered: true, hoveredType: type });
   };
@@ -47,6 +47,7 @@ export class InfoWindow extends Component {
           imageDescription: this.state.galleryImages[this.state.hoveredImageIndex].description,
         });
         break;
+
       case "close":
         this.closeWindow();
         this.setState({
@@ -56,12 +57,14 @@ export class InfoWindow extends Component {
           imageDescription: [],
         });
         break;
+
       case "play-video":
         this.videoRef.current.play();
         this.setState({
           videoPlaying: true,
         });
         break;
+
       case "pause-video":
         this.videoRef.current.pause();
         this.setState({
@@ -76,7 +79,6 @@ export class InfoWindow extends Component {
     if (this.props.contentOpen) {
       this.windowContainerRef.current.classList.remove("window-container-animation-class1");
       this.windowContainerRef.current.classList.add("window-container-animation-class2");
-      //this.imageContainerRef.current.classList.remove("image-container-animation");
       this.blockOverlayRef.current.classList.remove("block-overlay-animation");
     }
 
@@ -125,7 +127,7 @@ export class InfoWindow extends Component {
     }
 
     if (this.props.page !== prevProps.page) {
-      console.log("gera");
+      this.setState({ activePage: 0 });
       this.closeWindow();
     }
 
@@ -140,7 +142,6 @@ export class InfoWindow extends Component {
       } else {
         this.windowContainerRef.current.classList.remove("window-container-animation-class1");
         this.windowContainerRef.current.classList.add("window-container-animation-class2");
-        //this.imageContainerRef.current.classList.remove("image-container-animation");
         this.blockOverlayRef.current.classList.remove("block-overlay-animation");
       }
     }
@@ -159,7 +160,6 @@ export class InfoWindow extends Component {
       this.windowContainerRef.current.classList.add("window-container-animation-class1");
 
       this.blockOverlayRef.current.classList.add("block-overlay-animation");
-
       this.setContent();
     }
   }
@@ -168,7 +168,8 @@ export class InfoWindow extends Component {
     let loadedContent = content[this.props.page].box[this.props.contentIndex];
 
     if (loadedContent.video) {
-      this.setState({ activeVideo: loadedContent.footage });
+      this.setState({ activeVideo: loadedContent.footage, videoPlaying: true });
+      this.props.mouseEnterMovie(true);
     } else {
       let galleryImages = loadedContent.images;
       let imageDescription = galleryImages[this.state.activeImageIndex].description;
@@ -184,7 +185,14 @@ export class InfoWindow extends Component {
           <div className={`window-content window-content-${this.props.page + 1}-${this.props.contentIndex + 1}`} ref={this.windowContentRef}>
             <div className="content content-left">
               {this.state.galleryImages.length ? (
-                <img src={require(`../images/gallery/${this.state.activePage + 1}/${this.props.contentIndex + 1}_${this.state.activeImageIndex + 1}.jpg`)} className="main-image" alt="" />
+                <img
+                  onError={() => {
+                    this.addDefaultSrc();
+                  }}
+                  src={require(`../images/gallery/${this.state.activePage + 1}/${this.props.contentIndex + 1}_${this.state.activeImageIndex + 1}.jpg`)}
+                  className="main-image"
+                  alt=""
+                />
               ) : null}
               {this.state.galleryImages.length > 1 ? (
                 <div className="gallery">
@@ -212,11 +220,7 @@ export class InfoWindow extends Component {
             {this.state.imageDescription.length ? <div className="content content-right">{this.state.imageDescription[this.props.languageIndex]}</div> : null}
             {this.state.activeVideo ? (
               <div className="video-container">
-                <video
-                  //autoPlay
-                  ref={this.videoRef}
-                  key={`videoKey${this.props.languageIndex}${this.props.page}`}
-                >
+                <video autoPlay ref={this.videoRef} key={`videoKey${this.props.languageIndex}${this.props.page}`}>
                   <source src={this.state.activeVideo} type="video/mp4" />
                 </video>
                 <div

@@ -15,26 +15,24 @@ export class ChangePageButtons extends Component {
   handleButtonBackClick = () => {
     let currentPage = this.props.page - 1;
     this.props.changePageNumber(currentPage);
-    this.props.mouseEnterContent({ contentIndex: 0, open: false });
   };
 
   handleButtonNextClick = () => {
     let currentPage = this.props.page + 1;
     this.props.changePageNumber(currentPage);
-    this.props.mouseEnterContent({ contentIndex: 0, open: false });
   };
 
   mouseEnterHandler = () => {
     this.setState({ hovered: true });
     if (!this.props.movieOpen) {
-      //  this.handImageRef.current.classList.add("hand-image-animation");
+      this.handImageRef.current.classList.add("hand-image-animation");
     }
   };
 
   mouseLeaveHandler = () => {
     this.setState({ hovered: false });
     this.clearTimer();
-    // this.handImageRef.current.classList.remove("hand-image-animation");
+    this.handImageRef.current.classList.remove("hand-image-animation");
   };
 
   onTimeout = () => {
@@ -50,11 +48,13 @@ export class ChangePageButtons extends Component {
     if (this.state.hovered !== prevState.hovered) {
       if (this.state.hovered) {
         let hoverTime;
+
         if (this.props.movieOpen) {
-          hoverTime = 610000;
+          hoverTime = 220000;
         } else {
           hoverTime = 120000;
         }
+
         this.timer = setTimeout(this.onTimeout, hoverTime);
       } else {
         this.clearTimer();
@@ -84,7 +84,7 @@ export class ChangePageButtons extends Component {
           <div className="reset-box reset-box-top"></div>
           <div className="reset-box reset-box-bottom"></div>
         </div>
-        {/* <div className="hand-image hand-image-animation" ref={this.handImageRef}></div> */}
+        <div className="hand-image hand-image-animation" ref={this.handImageRef}></div>
       </div>
     );
   }
