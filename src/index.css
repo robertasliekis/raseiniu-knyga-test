@@ -55,6 +55,7 @@ body {
   overflow: hidden;
   height: 100vh;
   width: 160vh;
+  width: 100%;
 }
 
 .App {
