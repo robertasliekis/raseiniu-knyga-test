@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "761daadf4c9097cff6a16c36e7a2003c",
+    "revision": "d30f8217919f2757932d80f01e2cd6ef",
     "url": "/raseiniu-knyga-test/index.html"
   },
   {
-    "revision": "fff65699fd67a4cf3195",
-    "url": "/raseiniu-knyga-test/static/css/main.7c4f709b.chunk.css"
+    "revision": "a6742008e860104f48f9",
+    "url": "/raseiniu-knyga-test/static/css/main.0073367b.chunk.css"
   },
   {
-    "revision": "05c27ab75921c52623d2",
-    "url": "/raseiniu-knyga-test/static/js/2.4e82357d.chunk.js"
+    "revision": "5af807a0efb64667c8ab",
+    "url": "/raseiniu-knyga-test/static/js/2.afdfa86c.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/raseiniu-knyga-test/static/js/2.4e82357d.chunk.js.LICENSE.txt"
+    "url": "/raseiniu-knyga-test/static/js/2.afdfa86c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fff65699fd67a4cf3195",
-    "url": "/raseiniu-knyga-test/static/js/main.3830f1e1.chunk.js"
+    "revision": "a6742008e860104f48f9",
+    "url": "/raseiniu-knyga-test/static/js/main.1d7425c5.chunk.js"
   },
   {
     "revision": "0146ed13d36c0b4a206b",
@@ -336,24 +336,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/raseiniu-knyga-test/static/media/background_clear.7c62d6a2.jpg"
   },
   {
-    "revision": "5b184e3cc5bb7d6202c2282614d4e7cb",
-    "url": "/raseiniu-knyga-test/static/media/forrest.5b184e3c.mp3"
-  },
-  {
-    "revision": "57d91bd329897f7eb3625414b7caa9aa",
-    "url": "/raseiniu-knyga-test/static/media/garden.57d91bd3.mp3"
-  },
-  {
     "revision": "8f2c2409aeddb5815bf543b394f5f23e",
     "url": "/raseiniu-knyga-test/static/media/hand.8f2c2409.svg"
   },
   {
     "revision": "16d49700523bc83e11db52f078f84ec3",
     "url": "/raseiniu-knyga-test/static/media/left.16d49700.mp4"
-  },
-  {
-    "revision": "5158255366f5c44112fffe1af72c1c34",
-    "url": "/raseiniu-knyga-test/static/media/meadow.51582553.mp3"
   },
   {
     "revision": "8cda0bf146d267a171790a5677517d8c",
@@ -372,20 +360,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/raseiniu-knyga-test/static/media/page10.af7614fe.mp4"
   },
   {
-    "revision": "b94e7387abe247b110bcf9c3f83e89a7",
-    "url": "/raseiniu-knyga-test/static/media/page1plants.b94e7387.mp4"
-  },
-  {
     "revision": "27b6435bd7e33a5879404cae2889fb67",
     "url": "/raseiniu-knyga-test/static/media/page2.27b6435b.mp4"
   },
   {
     "revision": "580c1bec08710962dd6e1df0b69566cb",
     "url": "/raseiniu-knyga-test/static/media/page2.580c1bec.mp4"
-  },
-  {
-    "revision": "8350b40107568dd7a06f63e0b107ca54",
-    "url": "/raseiniu-knyga-test/static/media/page2plants.8350b401.mp4"
   },
   {
     "revision": "499e9f71f7b0898a9a893bc0a3d046df",
@@ -396,20 +376,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/raseiniu-knyga-test/static/media/page3.d7d3ae60.mp4"
   },
   {
-    "revision": "cc770a41b206c05f39aa8756a22d75b9",
-    "url": "/raseiniu-knyga-test/static/media/page3plants.cc770a41.mp4"
-  },
-  {
     "revision": "d2c57fd0fc2e930ae1f6e74edeacc590",
     "url": "/raseiniu-knyga-test/static/media/page4.d2c57fd0.mp4"
   },
   {
     "revision": "dc254a4a9c91ecbd5828d8372a969aea",
     "url": "/raseiniu-knyga-test/static/media/page4.dc254a4a.mp4"
-  },
-  {
-    "revision": "056d0d3329a2fd8c2ee4f8ac0213efad",
-    "url": "/raseiniu-knyga-test/static/media/page4plants.056d0d33.mp4"
   },
   {
     "revision": "1d1fd46bbe672d683dafaf85490db5cb",
@@ -420,10 +392,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/raseiniu-knyga-test/static/media/page5.2567fd64.mp4"
   },
   {
-    "revision": "2395f65ae9c632281e22e73357b73dc4",
-    "url": "/raseiniu-knyga-test/static/media/page5plants.2395f65a.mp4"
-  },
-  {
     "revision": "2e9568e20c95eac1198d5e38b5a19568",
     "url": "/raseiniu-knyga-test/static/media/page6.2e9568e2.mp4"
   },
@@ -432,20 +400,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/raseiniu-knyga-test/static/media/page6.a7fa2acc.mp4"
   },
   {
-    "revision": "d27cf720d49eec120b13d34a23da674b",
-    "url": "/raseiniu-knyga-test/static/media/page6plants.d27cf720.mp4"
-  },
-  {
     "revision": "327ed29779aa33dbb07006d704ad28c1",
     "url": "/raseiniu-knyga-test/static/media/page7.327ed297.mp4"
   },
   {
     "revision": "d2175bf14eb45b72e0e17a4138bf9180",
     "url": "/raseiniu-knyga-test/static/media/page7.d2175bf1.mp4"
-  },
-  {
-    "revision": "1036f9cb8d553a31591c044ee656a77f",
-    "url": "/raseiniu-knyga-test/static/media/page7plants.1036f9cb.mp4"
   },
   {
     "revision": "5e90c6545e39ba02fc8b97a646df13bc",
@@ -462,10 +422,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4b543947a86a9fbcf9822a9c7f1827d8",
     "url": "/raseiniu-knyga-test/static/media/page9.4b543947.mp4"
-  },
-  {
-    "revision": "969993f3d8990f7e065e7c456f1f5a48",
-    "url": "/raseiniu-knyga-test/static/media/plants_moving.969993f3.mp3"
   },
   {
     "revision": "25cc5ea83db71296b60dfea2070bd42a",
