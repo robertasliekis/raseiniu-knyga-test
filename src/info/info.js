@@ -19,13 +19,13 @@ const hoverZones = [
               "Portrait of Tadas Daugirdas, A. Žmuidzinavičius. 1910, canvas, oil, 67x46. M. K. Čiurlionis National Museum of Art (MKČDM)",
             ],
             description: [
-              `Tadas Daugirdas – dailininkas, archeologas, numizmatas, etnografas, muziejininkas, publicistas, visuomenininkas, rašytojas, Raseinių krašto senovės tyrėjas.
-          
+              `
           Daugirdas buvo nuoseklus mokslininkas, sistemingai tvarkė medžiagą, rašė tyrinėjimų dienoraščius ir juos iliustravo, registravo kultūros paminklus, tyrinėjo kapinynus, piliakalnius ir kitus istorinius paminklus Lietuvoje. Jis skatino pažinti Tėvynę, domėtis protėvių istorija, didžiuotis Lietuva ir jos žmonėmis.
+
           Mokslininko credo: „Gerai yra svetimas šalis pažinti, o savo tai jau priedermė.“
           `,
-              `Tadas Daugirdas was a painter, archaeologist, numismatist, ethnographer, museologist, publicist, public figure, writer, researcher of Raseiniai region history.
-        Daugirdas was a consistent scientist, systematically managed the data, wrote research diaries and illustrated them, registered cultural monuments, researched burial grounds, mounds and other historical monuments in Lithuania. He encouraged getting to know the motherland, taking an interest in the history of ancestors, being proud of Lithuania and its people.
+              `Daugirdas was a consistent scientist, systematically managed the data, wrote research diaries and illustrated them, registered cultural monuments, researched burial grounds, mounds and other historical monuments in Lithuania. He encouraged getting to know the motherland, taking an interest in the history of ancestors, being proud of Lithuania and its people.
+
         The scientist's credo was "A good thing is to know foreign countries, but to know your own one is already a duty."
         `,
             ],
@@ -56,29 +56,29 @@ const hoverZones = [
           {
             imageText: [],
             description: [
-              "Daugirdų legitimizacijos knygos titulinis puslapis – Herbas „Gulbė“. 1799 m. Daugirdų „Gulbė“ ant dvigalvio erelio krūtinės  – carinės Rusijos valdymo laikotarpio antspaudas. Herbo „Gulbė“  – signetas, vartotas antspauduoti dokumentus ar laiškus, saugomas Daugirdo provaikaitės šeimoje.",
-              "The Swan coat of arms, 1799. The title page of the Daugirdai legitimation book. The Swan of Daugirdai on the chest of a double-headed eagle. The seal of the reign of tsarist Russia. The “Swan” coat of arms was a sign used to stamp documents or letters. Now it is kept in the family of Daugirdas granddaughter.",
+              "Daugirdų „Gulbė“ ant dvigalvio erelio krūtinės  – carinės Rusijos valdymo laikotarpio antspaudas. Herbo „Gulbė“  – signetas, vartotas antspauduoti dokumentus ar laiškus, saugomas Daugirdo provaikaitės šeimoje.",
+              "The Swan of Daugirdai on the chest of a double-headed eagle. The seal of the reign of tsarist Russia. The “Swan” coat of arms was a sign used to stamp documents or letters. Now it is kept in the family of Daugirdas granddaughter.",
+            ],
+          },
+          {
+            imageText: [],
+            description: [
+              "Daugirdų „Gulbė“ ant dvigalvio erelio krūtinės  – carinės Rusijos valdymo laikotarpio antspaudas. Herbo „Gulbė“  – signetas, vartotas antspauduoti dokumentus ar laiškus, saugomas Daugirdo provaikaitės šeimoje.",
+              "The Swan of Daugirdai on the chest of a double-headed eagle. The seal of the reign of tsarist Russia. The “Swan” coat of arms was a sign used to stamp documents or letters. Now it is kept in the family of Daugirdas granddaughter.",
+            ],
+          },
+          {
+            imageText: [],
+            description: [
+              "Daugirdų „Gulbė“ ant dvigalvio erelio krūtinės  – carinės Rusijos valdymo laikotarpio antspaudas. Herbo „Gulbė“  – signetas, vartotas antspauduoti dokumentus ar laiškus, saugomas Daugirdo provaikaitės šeimoje.",
+              "The Swan of Daugirdai on the chest of a double-headed eagle. The seal of the reign of tsarist Russia. The “Swan” coat of arms was a sign used to stamp documents or letters. Now it is kept in the family of Daugirdas granddaughter.",
             ],
           },
           {
             imageText: [],
             description: [
               "Daugirdų legitimizacijos knygos titulinis puslapis – Herbas „Gulbė“. 1799 m. Daugirdų „Gulbė“ ant dvigalvio erelio krūtinės  – carinės Rusijos valdymo laikotarpio antspaudas. Herbo „Gulbė“  – signetas, vartotas antspauduoti dokumentus ar laiškus, saugomas Daugirdo provaikaitės šeimoje.",
-              "The Swan coat of arms, 1799. The title page of the Daugirdai legitimation book. The Swan of Daugirdai on the chest of a double-headed eagle. The seal of the reign of tsarist Russia. The “Swan” coat of arms was a sign used to stamp documents or letters. Now it is kept in the family of Daugirdas granddaughter.",
-            ],
-          },
-          {
-            imageText: [],
-            description: [
-              "Daugirdų legitimizacijos knygos titulinis puslapis – Herbas „Gulbė“. 1799 m. Daugirdų „Gulbė“ ant dvigalvio erelio krūtinės  – carinės Rusijos valdymo laikotarpio antspaudas. Herbo „Gulbė“  – signetas, vartotas antspauduoti dokumentus ar laiškus, saugomas Daugirdo provaikaitės šeimoje.",
-              "The Swan coat of arms, 1799. The title page of the Daugirdai legitimation book. The Swan of Daugirdai on the chest of a double-headed eagle. The seal of the reign of tsarist Russia. The “Swan” coat of arms was a sign used to stamp documents or letters. Now it is kept in the family of Daugirdas granddaughter.",
-            ],
-          },
-          {
-            imageText: [],
-            description: [
-              "Daugirdų legitimizacijos knygos titulinis puslapis – Herbas „Gulbė“. 1799 m. Daugirdų „Gulbė“ ant dvigalvio erelio krūtinės  – carinės Rusijos valdymo laikotarpio antspaudas. Herbo „Gulbė“  – signetas, vartotas antspauduoti dokumentus ar laiškus, saugomas Daugirdo provaikaitės šeimoje.",
-              "The Swan coat of arms, 1799. The title page of the Daugirdai legitimation book. The Swan of Daugirdai on the chest of a double-headed eagle. The seal of the reign of tsarist Russia. The “Swan” coat of arms was a sign used to stamp documents or letters. Now it is kept in the family of Daugirdas granddaughter.",
+              "The Swan of Daugirdai on the chest of a double-headed eagle. The seal of the reign of tsarist Russia. The “Swan” coat of arms was a sign used to stamp documents or letters. Now it is kept in the family of Daugirdas granddaughter.",
             ],
           },
         ],
@@ -94,7 +94,7 @@ const hoverZones = [
             imageText: [],
             description: [
               `Įdomu: Istoriniai faktai liudija, kad Vilniaus vaivada Daugirdas (pakrikštytas Jonu) ir jo tėvas Dedigaudas Salkaitis (pakrikštytas Jurgiu) jau iki 1413 m. naudojosi „Gulbė“  herbu. Jonui Daugirdui buvo priskirtas naujas herbas „Jaučio galva” (Pomian), jis panaudotas 1433 m. antspaude. Tačiau jo palikuonys naudojosi senuoju giminės herbu „Gulbė“.`,
-              `Interesting fact: Historical facts testify that the Vilnius voivode Daugirdas (christened Jonas) and his father Dedigaudas Salkaitis (christened Jurgis) already used the Swan coat of arms until 1413. Jonas Daugirdas was given a new coat of arms "Bull's Head" (Pomian), which was used as a seal in 1433. However, his descendants used the old family coat of arms "The Swan".`,
+              `Historical facts testify that the Vilnius voivode Daugirdas (christened Jonas) and his father Dedigaudas Salkaitis (christened Jurgis) already used the Swan coat of arms until 1413. Jonas Daugirdas was given a new coat of arms "Bull's Head" (Pomian), which was used as a seal in 1433. However, his descendants used the old family coat of arms "The Swan".`,
             ],
           },
         ],
@@ -111,7 +111,7 @@ const hoverZones = [
         height: 33,
         images: [
           {
-            imageText: ["Viršuje - Plemborgo dvaro nuotrauka iš lėktuvo. XX a. I p.", "Photo of Plemborg manor from an airplane. 1st part of 20th century."],
+            imageText: ["Viršuje - Plemborgo dvaro nuotrauka iš lėktuvo. XX a. I p.", "Above - photo of Plemborg manor from an airplane. 1st part of 20th century."],
             description: [
               "T. Daugirdo draugas lenkų istorikas Ludwik Krzywicki rašė: ‚‚Vienas Daugirdo protėvių iš Lenkijos karalių ir Lietuvos didžiųjų kunigaikščių gavo gabalą žemės prie Dubysos, prie kurios mūsų laikais išsidėstė Plemborgo plotai – dvaras, kuris apie porą šimtų metų neišėjo iš palikuonių rankų. Žemių židinys buvo Plemborgas, lietuviškai Plembaris, nuo mažo upelio Plembis.... Dvaras buvo sulipdytas iš priestatų, daugiaaukštis,…, su dviem dideliais svečių kambariais pirmame aukšte, o žemutiniame aukšte su dideliu valgomuoju, milžinišku salonu, kambariais vyresniesiems giminės atstovams, kambarėliais jaunimui.“ ",
               "A friend of T. Daugirdas, Ludwik Krzywicki, a Polish historian, once wrote “One of the ancestors of Daugirdas from the kings of Poland and the Grand Dukes of Lithuania received a piece of land near the river Dubysa, where later the manor of Plemborg was located.  The manor did not pass from the hands of the descendants for about a couple of hundred years. The centre of the territory was Plemborg or Plembaris in Lithuanian, from the small stream Plembis .... The manor was glued from the annexes, multi-storey, ..., with two large guest rooms on the first floor and large dining room, a huge salon, rooms for the senior family members and young people on the ground floor.”",
@@ -184,7 +184,7 @@ const hoverZones = [
           {
             imageText: [],
             description: [
-              "Įdomu: Motina Marija kilusi iš Kelmės krašto, Jelenskių giminės, kildinusios save iš karaimų tautos bajorų. Giminės prisimena, kad ji nepaprastai mėgo puoštis, siuvosi prašmatnias sunkaus šilko suknias, dabindavosi dideliais auksiniais papuošalais ir brangakmeniais. Ji didžiavosi savo karaimiškomis ir lietuviškomis šaknimis, tad užsakydama sau suknelių modelius, sugalvodavo, kaip įkomponuoti tautinį motyvą.",
+              "Motina Marija kilusi iš Kelmės krašto, Jelenskių giminės, kildinusios save iš karaimų tautos bajorų. Giminės prisimena, kad ji nepaprastai mėgo puoštis, siuvosi prašmatnias sunkaus šilko suknias, dabindavosi dideliais auksiniais papuošalais ir brangakmeniais. Ji didžiavosi savo karaimiškomis ir lietuviškomis šaknimis, tad užsakydama sau suknelių modelius, sugalvodavo, kaip įkomponuoti tautinį motyvą.",
               "Interesting fact: The mother Mary comes from Kelmė region, the Jelenskiai family, who descended themselves from the nobility of the Karaite nation. The relatives remember that she loved to dress up, sewed chic heavy silk dresses, wore large gold jewellery and precious stones. She was proud of her Karaite and Lithuanian roots. When ordering dresses for herself, she used to come up with a way to incorporate a national motif.",
             ],
           },
@@ -196,10 +196,10 @@ const hoverZones = [
     page: 3,
     box: [
       {
-        posX: 8,
-        posY: 20,
-        width: 15,
-        height: 40,
+        posX: 11,
+        posY: 23,
+        width: 12,
+        height: 33,
         images: [
           {
             imageText: [],
@@ -310,7 +310,7 @@ const hoverZones = [
       {
         posX: 54,
         posY: 61,
-        width: 24,
+        width: 23,
         height: 23,
         twoImages: true,
         images: [
@@ -320,9 +320,9 @@ const hoverZones = [
       },
       {
         posX: 72,
-        posY: 10,
-        width: 18,
-        height: 29,
+        posY: 12,
+        width: 14,
+        height: 22,
         images: [
           {
             imageText: [],

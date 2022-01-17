@@ -104,6 +104,7 @@ body {
 
 .white-box-hover-border {
   opacity: 0;
+  //opacity: 1;
   transition: 0.5s all ease;
 
   &:hover {
@@ -175,7 +176,7 @@ body {
   background-color: green;
   z-index: 25;
   opacity: 0;
-
+  opacity: 1;
   .change-page-buttons {
     z-index: 20;
     width: 100%;
@@ -483,6 +484,7 @@ body {
         &.content-left {
           justify-content: center;
           width: 60%;
+          padding-bottom: 5%;
 
           .main-image {
             height: 75%;
@@ -496,6 +498,19 @@ body {
         &.content-right {
           justify-content: center;
           width: 40%;
+        }
+      }
+    }
+
+    &-2-5 {
+      .content {
+        padding: 0;
+        &.content-left {
+          justify-content: center;
+        
+          .main-image {
+            height: 75%;
+          }
         }
       }
     }
@@ -656,6 +671,7 @@ body {
       .content {
         &.content-left {
           width: auto;
+          padding-bottom: 4%;
 
           .main-image {
             height: 75%;
