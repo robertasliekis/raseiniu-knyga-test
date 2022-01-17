@@ -1,5 +1,5 @@
 const initialState = {
-  page: 2,
+  page: 0,
 };
 
 const changePageNumber = (state = initialState, action) => {
