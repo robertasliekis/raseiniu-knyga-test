@@ -77,7 +77,7 @@ const hoverZones = [
           {
             imageText: [],
             description: [
-              "Daugirdų legitimizacijos knygos titulinis puslapis – Herbas „Gulbė“. 1799 m. Daugirdų „Gulbė“ ant dvigalvio erelio krūtinės  – carinės Rusijos valdymo laikotarpio antspaudas. Herbo „Gulbė“  – signetas, vartotas antspauduoti dokumentus ar laiškus, saugomas Daugirdo provaikaitės šeimoje.",
+              "Daugirdų „Gulbė“ ant dvigalvio erelio krūtinės  – carinės Rusijos valdymo laikotarpio antspaudas. Herbo „Gulbė“  – signetas, vartotas antspauduoti dokumentus ar laiškus, saugomas Daugirdo provaikaitės šeimoje.",
               "The Swan of Daugirdai on the chest of a double-headed eagle. The seal of the reign of tsarist Russia. The “Swan” coat of arms was a sign used to stamp documents or letters. Now it is kept in the family of Daugirdas granddaughter.",
             ],
           },
@@ -93,7 +93,7 @@ const hoverZones = [
             png: true,
             imageText: [],
             description: [
-              `Įdomu: Istoriniai faktai liudija, kad Vilniaus vaivada Daugirdas (pakrikštytas Jonu) ir jo tėvas Dedigaudas Salkaitis (pakrikštytas Jurgiu) jau iki 1413 m. naudojosi „Gulbė“  herbu. Jonui Daugirdui buvo priskirtas naujas herbas „Jaučio galva” (Pomian), jis panaudotas 1433 m. antspaude. Tačiau jo palikuonys naudojosi senuoju giminės herbu „Gulbė“.`,
+              `Istoriniai faktai liudija, kad Vilniaus vaivada Daugirdas (pakrikštytas Jonu) ir jo tėvas Dedigaudas Salkaitis (pakrikštytas Jurgiu) jau iki 1413 m. naudojosi „Gulbė“  herbu. Jonui Daugirdui buvo priskirtas naujas herbas „Jaučio galva” (Pomian), jis panaudotas 1433 m. antspaude. Tačiau jo palikuonys naudojosi senuoju giminės herbu „Gulbė“.`,
               `Historical facts testify that the Vilnius voivode Daugirdas (christened Jonas) and his father Dedigaudas Salkaitis (christened Jurgis) already used the Swan coat of arms until 1413. Jonas Daugirdas was given a new coat of arms "Bull's Head" (Pomian), which was used as a seal in 1433. However, his descendants used the old family coat of arms "The Swan".`,
             ],
           },
@@ -185,7 +185,7 @@ const hoverZones = [
             imageText: [],
             description: [
               "Motina Marija kilusi iš Kelmės krašto, Jelenskių giminės, kildinusios save iš karaimų tautos bajorų. Giminės prisimena, kad ji nepaprastai mėgo puoštis, siuvosi prašmatnias sunkaus šilko suknias, dabindavosi dideliais auksiniais papuošalais ir brangakmeniais. Ji didžiavosi savo karaimiškomis ir lietuviškomis šaknimis, tad užsakydama sau suknelių modelius, sugalvodavo, kaip įkomponuoti tautinį motyvą.",
-              "Interesting fact: The mother Mary comes from Kelmė region, the Jelenskiai family, who descended themselves from the nobility of the Karaite nation. The relatives remember that she loved to dress up, sewed chic heavy silk dresses, wore large gold jewellery and precious stones. She was proud of her Karaite and Lithuanian roots. When ordering dresses for herself, she used to come up with a way to incorporate a national motif.",
+              "The mother Mary comes from Kelmė region, the Jelenskiai family, who descended themselves from the nobility of the Karaite nation. The relatives remember that she loved to dress up, sewed chic heavy silk dresses, wore large gold jewellery and precious stones. She was proud of her Karaite and Lithuanian roots. When ordering dresses for herself, she used to come up with a way to incorporate a national motif.",
             ],
           },
         ],
@@ -507,7 +507,7 @@ const hoverZones = [
           {
             imageText: [],
             description: [
-              "Lietuvos mokslų akademijos Vrublevskių bibliotekoje saugomas 1908 m. T. Daugirdo sudarytas Archeologinis Dubysos apylinkių nuo Betygalos iki Survilų žemėlapis. <br><br> <span>Mapka archeologiczna okolicy nad–Dubiskiej: od miasteczka Betygoły do okolicy Surwiłły /Tadeusz Dowgird. Warszawa,1909.</span>",
+              "Lietuvos mokslų akademijos Vrublevskių bibliotekoje saugomas 1908 m. T. Daugirdo sudarytas Archeologinis Dubysos apylinkių nuo Betygalos iki Survilų žemėlapis. <br><br><span>Mapka archeologiczna okolicy nad–Dubiskiej: od miasteczka Betygoły do okolicy Surwiłły /Tadeusz Dowgird. Warszawa,1909.</span>",
               "The Archaeological map of Dubysa area from Betygala to Survilai was compiled by T. Daugirdas in 1908 and is stored in the Wroblewski Library of the Lithuanian Academy of Sciences.<br><br><span>Mapka archeologiczna okolicy nad–Dubiskiej: od miasteczka Betygoły do okolicy Surwiłły /Tadeusz Dowgird. Warszawa,1909.</span>",
             ],
           },
@@ -768,15 +768,15 @@ const hoverZones = [
           {
             imageText: [],
             description: [
-              "Tadas Daugirdas mirė, 1919 m. lapkričio 1 d., palaidotas Ariogaloje, Daugirdų šeimos koplyčioje. Mieste yra Tado Daugirdo gatvė ir aikštė, Ariogalos gimnazijoje - vardinis kabinetas. Tado Daugirdo garbei pavadintos gatvės Raseiniuose ir Kaune, Rotušės a. namą, kuriame buvo miesto muziejus, puošia memorialinė lenta.",
-              "Tadas Daugirdas died on 1st November 1919, was buried in Ariogala Daugirdai family chapel. The street and the square named after Tadas Daugirdas are in the city, as well as a dedicated office in Ariogala Gymnasium. The streets after Tadas Daugirdas in Raseiniai and Kaunas are named, the house in city Hall square, where the city museum used to be, is marked with a memorial plaque.",
+              "Tadas Daugirdas mirė, 1919 m. lapkričio 1 d., palaidotas Ariogaloje, Daugirdų šeimos koplyčioje. Mieste yra Tado Daugirdo gatvė ir aikštė, Ariogalos gimnazijoje - vardinis kabinetas. Kauno Rotušės aikštėje esantį namą, kuriame įsikūręs miesto muziejus, puošia memorialinė T.Daugirdo lenta.",
+              "Tadas Daugirdas died on 1st November 1919, was buried in Ariogala Daugirdai family chapel. The street and the square named after Tadas Daugirdas are in the city, as well as a dedicated office in Ariogala Gymnasium. The memorial plaque decorates a house in the city Hall square in Kaunas, where the city museum used to be.",
             ],
           },
           {
             imageText: [],
             description: [
-              "Tadas Daugirdas mirė, 1919 m. lapkričio 1 d., palaidotas Ariogaloje, Daugirdų šeimos koplyčioje. Mieste yra Tado Daugirdo gatvė ir aikštė, Ariogalos gimnazijoje - vardinis kabinetas. Tado Daugirdo garbei pavadintos gatvės Raseiniuose ir Kaune, Rotušės a. namą, kuriame buvo miesto muziejus, puošia memorialinė lenta.",
-              "Tadas Daugirdas died on 1st November 1919, was buried in Ariogala Daugirdai family chapel. The street and the square named after Tadas Daugirdas are in the city, as well as a dedicated office in Ariogala Gymnasium. The streets after Tadas Daugirdas in Raseiniai and Kaunas are named, the house in city Hall square, where the city museum used to be, is marked with a memorial plaque.",
+              "Tadas Daugirdas mirė, 1919 m. lapkričio 1 d., palaidotas Ariogaloje, Daugirdų šeimos koplyčioje. Mieste yra Tado Daugirdo gatvė ir aikštė, Ariogalos gimnazijoje - vardinis kabinetas. Kauno Rotušės aikštėje esantį namą, kuriame įsikūręs miesto muziejus, puošia memorialinė T.Daugirdo lenta.",
+              "Tadas Daugirdas died on 1st November 1919, was buried in Ariogala Daugirdai family chapel. The street and the square named after Tadas Daugirdas are in the city, as well as a dedicated office in Ariogala Gymnasium. The memorial plaque decorates a house in the city Hall square in Kaunas, where the city museum used to be.",
             ],
           },
         ],

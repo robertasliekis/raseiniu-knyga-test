@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-$hover-zone-delay: 5s;
+$hover-zone-delay: 2s;
 $hand-animation-delay: 40s;
 $block-overlay-delay: 2s;
 $border-width: 25px;
@@ -447,7 +447,7 @@ body {
         }
 
         &.content-right {
-          justify-content: flex-start;
+          justify-content: center;
           width: 35%;
         }
       }
@@ -562,10 +562,10 @@ body {
 
     &-3-5 {
       .content {
-
         &.content-left {
           justify-content: center;
           width: 70%;
+          align-items: flex-start;
 
           .main-image {
             height: 70%;
@@ -616,9 +616,9 @@ body {
     &-4-1 {
       .content {
         justify-content: center;
-        padding: 0;
 
         &.content-left {
+          justify-content: center;
           width: 65%;  
         }
 
@@ -659,6 +659,29 @@ body {
           .main-image {
             height: 90%;
           }
+        }
+      }
+    }
+
+    &-4-6 {
+      .content {
+        &.content-left {
+          padding: 8% 0;
+          justify-content: center;
+
+          .main-image {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+
+    &-6-3{
+      .content {
+        &.content-right {
+          width: 65%;
+          align-items: flex-start;
         }
       }
     }
@@ -713,6 +736,7 @@ body {
         &.content-right {
           width: 45%;
           justify-content: flex-start;
+          padding-top: 22%;
         }
       }
     }
@@ -720,13 +744,14 @@ body {
     &-8-1 {
       .content {
         &.content-left {
+          justify-content: center;
           .main-image {
             height: 85%;
           }
         }
 
         &.content-right {
-          justify-content: flex-start;
+          justify-content: center;
         }
       }
     }
@@ -737,10 +762,16 @@ body {
 
         &.content-left {
           width: 60%;
+          justify-content: center;
+
+          .main-image {
+            height: 90%;
+          }
         }
 
         &.content-right {
           width: 40%;
+          padding-top: 24%;
           justify-content: flex-start;
         }
       }
@@ -756,6 +787,7 @@ body {
 
         &.content-right {
           width: 40%;
+          padding-top: 23%;
           justify-content: flex-start;
         }
       }
@@ -767,7 +799,9 @@ body {
         justify-content: center;
 
         &.content-left {
+          align-items: center;
           width: 60%;
+          padding: 0;
         }
 
         &.content-right {
@@ -782,13 +816,18 @@ body {
         justify-content: flex-start;
 
         &.content-left {
+          justify-content: center;
+          padding: 0;
           .main-image {
-            max-height: 60%;
+            height: 60%;
+            max-height: none;
+            min-height: none;
           }
         }
 
         &.content-right {
         justify-content: flex-start;
+        padding-top: 16%;
          
         }
       }
@@ -834,21 +873,93 @@ body {
       .content {
         &.content-left {
           .main-image {
-            height: 70%;
-
+            max-width: none;
+            max-height: none;
+            height: 83%;
           }
         }
 
       }
     }
 
-    &-10-2, &-10-4 {
+    &-10-2 {
       .content {
         padding: 0;
         justify-content: center;
+        align-items: center;
 
         &.content-left {
+          width: 65%;
+          padding: 0;
+
+          .main-image {
+            max-height: none;
+            max-width: none;
+            height: 65%;
+          }
+        }
+
+        &.content-right {
+          width: 35%;
+        }
+      }
+    }
+
+    &-10-3 {
+      .content {
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+
+        &.content-left {
+          padding: 0;
+
+          .main-image {
+            max-height: none;
+            max-width: none;
+            height: 70%;
+          }
+        }
+      }
+    }
+
+    &-10-4 {
+      .content {
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+
+        &.content-left {
+          padding: 0;
           width: 70%;
+
+          .main-image {
+            max-height: none;
+            max-width: none;
+            width: 100%;
+          }
+        }
+
+        &.content-right {
+          width: 30%;
+        }
+      }
+    }
+
+    &-10-5 {
+      .content {
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+
+        &.content-left {
+          padding: 0;
+
+          .main-image{
+            max-height: none;
+            max-width: none;
+            height: 87%;
+          }
         }
 
         &.content-right {
@@ -1015,6 +1126,7 @@ body {
   height: 100%;
   z-index: 1;
   opacity: 0;
+  @include positionAbsoluteCenter();
 
   video {
     background-position: center;

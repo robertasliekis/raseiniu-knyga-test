@@ -50,7 +50,7 @@ export class VideoBackground extends Component {
 
   render() {
     const setPlayBack = () => {
-      this.videoRef.current.playbackRate = 1;
+      this.videoRef.current.playbackRate = 2;
     };
 
     return (

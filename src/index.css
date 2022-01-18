@@ -649,9 +649,9 @@ body {
 }
 
 .window-container .window-content-2-2 .content.content-right {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 35%;
 }
 
@@ -773,6 +773,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 70%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .window-container .window-content-3-5 .content.content-left .main-image {
@@ -832,10 +835,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0;
 }
 
 .window-container .window-content-4-1 .content.content-left {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 65%;
 }
 
@@ -864,6 +869,25 @@ body {
 
 .window-container .window-content-4-4 .content.content-left .main-image {
   height: 90%;
+}
+
+.window-container .window-content-4-6 .content.content-left {
+  padding: 8% 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.window-container .window-content-4-6 .content.content-left .main-image {
+  width: 100%;
+  height: auto;
+}
+
+.window-container .window-content-6-3 .content.content-right {
+  width: 65%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .window-container .window-content-6-1 .content.content-left, .window-container .window-content-6-3 .content.content-left, .window-container .window-content-6-4 .content.content-left {
@@ -912,6 +936,13 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  padding-top: 22%;
+}
+
+.window-container .window-content-8-1 .content.content-left {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .window-container .window-content-8-1 .content.content-left .main-image {
@@ -919,9 +950,9 @@ body {
 }
 
 .window-container .window-content-8-1 .content.content-right {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .window-container .window-content-8-2 .content {
@@ -930,10 +961,18 @@ body {
 
 .window-container .window-content-8-2 .content.content-left {
   width: 60%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.window-container .window-content-8-2 .content.content-left .main-image {
+  height: 90%;
 }
 
 .window-container .window-content-8-2 .content.content-right {
   width: 40%;
+  padding-top: 24%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -949,6 +988,7 @@ body {
 
 .window-container .window-content-8-3 .content.content-right {
   width: 40%;
+  padding-top: 23%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -962,7 +1002,11 @@ body {
 }
 
 .window-container .window-content-8-4 .content.content-left {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 60%;
+  padding: 0;
 }
 
 .window-container .window-content-8-4 .content.content-right {
@@ -976,14 +1020,24 @@ body {
           justify-content: flex-start;
 }
 
+.window-container .window-content-8-5 .content.content-left {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
 .window-container .window-content-8-5 .content.content-left .main-image {
-  max-height: 60%;
+  height: 60%;
+  max-height: none;
+  min-height: none;
 }
 
 .window-container .window-content-8-5 .content.content-right {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  padding-top: 16%;
 }
 
 .window-container .window-content-9-1 .content.content-left .main-image {
@@ -1013,21 +1067,102 @@ body {
 }
 
 .window-container .window-content-10-1 .content.content-left .main-image {
-  height: 70%;
+  max-width: none;
+  max-height: none;
+  height: 83%;
 }
 
-.window-container .window-content-10-2 .content, .window-container .window-content-10-4 .content {
+.window-container .window-content-10-2 .content {
   padding: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.window-container .window-content-10-2 .content.content-left, .window-container .window-content-10-4 .content.content-left {
+.window-container .window-content-10-2 .content.content-left {
+  width: 65%;
+  padding: 0;
+}
+
+.window-container .window-content-10-2 .content.content-left .main-image {
+  max-height: none;
+  max-width: none;
+  height: 65%;
+}
+
+.window-container .window-content-10-2 .content.content-right {
+  width: 35%;
+}
+
+.window-container .window-content-10-3 .content {
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.window-container .window-content-10-3 .content.content-left {
+  padding: 0;
+}
+
+.window-container .window-content-10-3 .content.content-left .main-image {
+  max-height: none;
+  max-width: none;
+  height: 70%;
+}
+
+.window-container .window-content-10-4 .content {
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.window-container .window-content-10-4 .content.content-left {
+  padding: 0;
   width: 70%;
 }
 
-.window-container .window-content-10-2 .content.content-right, .window-container .window-content-10-4 .content.content-right {
+.window-container .window-content-10-4 .content.content-left .main-image {
+  max-height: none;
+  max-width: none;
+  width: 100%;
+}
+
+.window-container .window-content-10-4 .content.content-right {
+  width: 30%;
+}
+
+.window-container .window-content-10-5 .content {
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.window-container .window-content-10-5 .content.content-left {
+  padding: 0;
+}
+
+.window-container .window-content-10-5 .content.content-left .main-image {
+  max-height: none;
+  max-width: none;
+  height: 87%;
+}
+
+.window-container .window-content-10-5 .content.content-right {
   width: 30%;
 }
 
@@ -1292,6 +1427,11 @@ body {
   height: 100%;
   z-index: 1;
   opacity: 0;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
 .video-background-container video {
@@ -1339,8 +1479,8 @@ body {
           animation-fill-mode: forwards;
   -webkit-animation-name: video-ornament-animation;
           animation-name: video-ornament-animation;
-  -webkit-animation-delay: calc(5s + 5.5s);
-          animation-delay: calc(5s + 5.5s);
+  -webkit-animation-delay: calc(2s + 5.5s);
+          animation-delay: calc(2s + 5.5s);
 }
 
 @-webkit-keyframes video-ornament-animation {
@@ -1471,8 +1611,8 @@ body {
           animation: btn-language-animation 1.5s ease-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   opacity: 0;
 }
 
@@ -1517,8 +1657,8 @@ body {
 .hover-zones-animation-class {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-name: hover-zones-animation;
