@@ -19,7 +19,6 @@ export class InfoWindow extends Component {
       activeVideo: null,
       videoPlaying: false,
       activePage: 0,
-      imageFormat: "jpg",
     };
 
     this.windowContainerRef = React.createRef();
@@ -46,7 +45,6 @@ export class InfoWindow extends Component {
         this.setState({
           activeImageIndex: this.state.hoveredImageIndex,
           imageDescription: this.state.galleryImages[this.state.hoveredImageIndex].description,
-          imageFormat: this.state.galleryImages[this.state.hoveredImageIndex].png ? "png" : "jpg",
         });
         break;
 
@@ -100,6 +98,7 @@ export class InfoWindow extends Component {
       videoPlaying: false,
       activeVideo: null,
       activePage: 0,
+      hoveredImageIndex: 0
     });
   }
 
@@ -168,22 +167,35 @@ export class InfoWindow extends Component {
 
   setContent() {
     let loadedContent = content[this.props.page].box[this.props.contentIndex];
+    if (loadedContent) {
+      if (loadedContent.video) {
+        this.setState({ activeVideo: loadedContent.footage, videoPlaying: true });
+        this.props.mouseEnterMovie(true);
+      } else {
+        let galleryImages = loadedContent.images;
+        let imageDescription = galleryImages[this.state.activeImageIndex].description;
+        let imageTextBelow = galleryImages[this.state.activeImageIndex].imageText;
 
-    if (loadedContent.video) {
-      this.setState({ activeVideo: loadedContent.footage, videoPlaying: true });
-      this.props.mouseEnterMovie(true);
-    } else {
-      let galleryImages = loadedContent.images;
-      let imageDescription = galleryImages[this.state.activeImageIndex].description;
-      let imageTextBelow = galleryImages[this.state.activeImageIndex].imageText;
-      this.setState({
-        galleryImages: galleryImages,
-        imageDescription: imageDescription,
-        imageTextBelow: imageTextBelow,
-        activePage: this.props.page,
-        imageFormat: galleryImages[this.state.hoveredImageIndex].png ? "png" : "jpg",
-      });
+        this.setState({
+          galleryImages: galleryImages,
+          imageDescription: imageDescription,
+          imageTextBelow: imageTextBelow,
+          activePage: this.props.page,
+        });
+      }
     }
+  }
+
+  getImage(className, key = this.state.activeImageIndex) {
+    let imagePath;
+
+    try {
+      const imageFormat = this.state.galleryImages[key]?.png ? "png" : "jpg";
+      imagePath = require(`../images/gallery/${this.state.activePage + 1}/${this.props.contentIndex + 1}_${key + 1}.${imageFormat}`);
+    } catch (err) {
+      imagePath = '';
+    }
+    return <img src={imagePath} className={className} alt=""/>
   }
 
   render() {
@@ -192,23 +204,13 @@ export class InfoWindow extends Component {
         <div className="window-container" ref={this.windowContainerRef}>
           <div className={`window-content window-content-${this.props.page + 1}-${this.props.contentIndex + 1}`} ref={this.windowContentRef}>
             <div className="content content-left">
-              {this.state.galleryImages.length ? (
-                <img
-                  onError={() => {
-                    this.addDefaultSrc();
-                  }}
-                  src={require(`../images/gallery/${this.state.activePage + 1}/${this.props.contentIndex + 1}_${this.state.activeImageIndex + 1}.${this.state.imageFormat}`)}
-                  className="main-image"
-                  alt=""
-                />
-              ) : null}
+              {this.state.galleryImages.length ? this.getImage("main-image") : null}
               {this.state.galleryImages.length > 1 ? (
                 <div className="gallery">
                   {this.state.galleryImages.map((image, key) => {
                     return this.state.activeImageIndex !== key ? (
-                      <img
-                        alt=""
-                        className="gallery-image"
+                      <div className="image-wrapper" 
+                        key={key}
                         onMouseEnter={() => {
                           this.mouseEnterHandler("change-image");
                           this.setState({
@@ -216,9 +218,9 @@ export class InfoWindow extends Component {
                           });
                         }}
                         onMouseLeave={this.mouseLeaveHandler}
-                        key={key}
-                        src={require(`../images/gallery/${this.state.activePage + 1}/${this.props.contentIndex + 1}_${key + 1}.jpg`)}
-                      ></img>
+                      >
+                        {this.getImage("gallery-image", key)}
+                      </div>
                     ) : null;
                   })}
                 </div>

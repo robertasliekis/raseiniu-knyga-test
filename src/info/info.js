@@ -678,8 +678,8 @@ const hoverZones = [
       {
         posX: 79,
         posY: 48,
-        width: 13,
-        height: 18,
+        width: 10,
+        height: 14,
         images: [
           {
             imageText: [],

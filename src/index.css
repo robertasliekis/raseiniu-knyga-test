@@ -539,14 +539,10 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   position: relative;
-  padding: 8% 0;
-  font-size: 26px;
-  line-height: 36px;
+  padding: 6% 0;
+  font-size: 20px;
+  line-height: 26px;
   font-style: normal;
-}
-
-.window-container .window-content .content.content-left {
-  padding-bottom: 8%;
 }
 
 .window-container .window-content .content.content-right {
@@ -588,22 +584,30 @@ body {
   margin-top: 15px;
 }
 
-.window-container .window-content .content .gallery .gallery-image {
+.window-container .window-content .content .gallery .image-wrapper {
+  height: 100%;
+}
+
+.window-container .window-content .content .gallery .image-wrapper .gallery-image {
   height: 100%;
   max-width: 100%;
   max-height: 100%;
   margin-right: 20px;
 }
 
-.window-container .window-content .content .gallery .gallery-image:last-child {
+.window-container .window-content .content .gallery .image-wrapper:last-child {
   margin-right: 0;
 }
 
 .window-container .window-content .content .text-below-image {
-  margin-top: 20px;
-  font-size: 18px;
-  line-height: 24px;
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 22px;
   font-style: italic;
+}
+
+.window-container .window-content-1-1 .content .main-image {
+  height: 95%;
 }
 
 .window-container .window-content-1-2 .content {
@@ -612,6 +616,7 @@ body {
 
 .window-container .window-content-1-2 .content .main-image {
   width: 100%;
+  height: 95%;
 }
 
 .window-container .window-content-1-3 .content-left {
@@ -619,7 +624,7 @@ body {
 }
 
 .window-container .window-content-1-3 .content-left .main-image {
-  height: 62%;
+  height: 80%;
 }
 
 .window-container .window-content-1-4 .content-left {
@@ -627,10 +632,11 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0;
+  padding-bottom: 0;
 }
 
 .window-container .window-content-1-4 .content-left .main-image {
-  height: 45%;
+  height: 50%;
 }
 
 .window-container .window-content-2-1 .content-right.content {
@@ -663,6 +669,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 65%;
 }
 
@@ -679,14 +688,13 @@ body {
   width: 35%;
 }
 
-.window-container .window-content-2-4 .content {
-  padding: 10% 0;
-}
-
 .window-container .window-content-2-4 .content.content-left {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 60%;
   padding-bottom: 5%;
 }
@@ -702,9 +710,10 @@ body {
 }
 
 .window-container .window-content-2-4 .content.content-right {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding-top: 13%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 40%;
 }
 
@@ -790,18 +799,13 @@ body {
 
 .window-container .window-content-3-5 .content.content-right {
   width: 30%;
-  padding-top: 32%;
+  padding-top: 27%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
 
-.window-container .window-content-3-6 .content {
-  padding-top: 17%;
-}
-
 .window-container .window-content-3-6 .content.content-left {
-  padding-top: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -812,10 +816,8 @@ body {
 }
 
 .window-container .window-content-3-6 .content.content-left .main-image {
-  height: 70%;
   width: auto;
-  height: auto;
-  max-height: 65%;
+  height: 80%;
 }
 
 .window-container .window-content-3-6 .content.content-left .gallery {
@@ -826,6 +828,7 @@ body {
 
 .window-container .window-content-3-6 .content.content-right {
   width: 55%;
+  padding-top: 17%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -849,7 +852,7 @@ body {
 }
 
 .window-container .window-content-4-2 .content.content-left .main-image {
-  height: 70%;
+  height: 75%;
 }
 
 .window-container .window-content-4-3 .content {
@@ -867,12 +870,18 @@ body {
   width: 40%;
 }
 
+.window-container .window-content-4-4 .content.content-left {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .window-container .window-content-4-4 .content.content-left .main-image {
   height: 90%;
 }
 
 .window-container .window-content-4-6 .content.content-left {
-  padding: 8% 0;
+  padding: 7% 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -888,24 +897,28 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-}
-
-.window-container .window-content-6-1 .content.content-left, .window-container .window-content-6-3 .content.content-left, .window-container .window-content-6-4 .content.content-left {
-  width: auto;
-  padding-bottom: 4%;
-}
-
-.window-container .window-content-6-1 .content.content-left .main-image, .window-container .window-content-6-3 .content.content-left .main-image, .window-container .window-content-6-4 .content.content-left .main-image {
-  height: 75%;
-}
-
-.window-container .window-content-6-1 .content.content-left .gallery, .window-container .window-content-6-3 .content.content-left .gallery, .window-container .window-content-6-4 .content.content-left .gallery {
+  padding-top: 20%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
 
-.window-container .window-content-6-1 .content.content-right, .window-container .window-content-6-3 .content.content-right, .window-container .window-content-6-4 .content.content-right {
+.window-container .window-content-6-1 .content.content-left, .window-container .window-content-6-3 .content.content-left {
+  width: auto;
+  padding-bottom: 4%;
+}
+
+.window-container .window-content-6-1 .content.content-left .main-image, .window-container .window-content-6-3 .content.content-left .main-image {
+  height: 75%;
+}
+
+.window-container .window-content-6-1 .content.content-left .gallery, .window-container .window-content-6-3 .content.content-left .gallery {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.window-container .window-content-6-1 .content.content-right, .window-container .window-content-6-3 .content.content-right {
   width: 65%;
 }
 
@@ -917,18 +930,16 @@ body {
   height: 75%;
 }
 
-.window-container .window-content-7-2 .content {
-  padding-top: 17%;
-}
-
 .window-container .window-content-7-2 .content.content-left {
   width: 55%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .window-container .window-content-7-2 .content.content-left .main-image {
-  height: auto;
   width: auto;
-  max-height: 75%;
+  height: 90%;
 }
 
 .window-container .window-content-7-2 .content.content-right {
@@ -936,7 +947,7 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding-top: 22%;
+  padding-top: 17%;
 }
 
 .window-container .window-content-8-1 .content.content-left {
@@ -972,23 +983,23 @@ body {
 
 .window-container .window-content-8-2 .content.content-right {
   width: 40%;
-  padding-top: 24%;
+  padding-top: 20%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-}
-
-.window-container .window-content-8-3 .content {
-  padding-top: 10%;
 }
 
 .window-container .window-content-8-3 .content.content-left {
   width: 60%;
 }
 
+.window-container .window-content-8-3 .content.content-left .main-image {
+  height: 85%;
+}
+
 .window-container .window-content-8-3 .content.content-right {
   width: 40%;
-  padding-top: 23%;
+  padding-top: 17%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -1014,7 +1025,6 @@ body {
 }
 
 .window-container .window-content-8-5 .content {
-  padding-top: 12%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -1037,7 +1047,13 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding-top: 16%;
+  padding-top: 10%;
+}
+
+.window-container .window-content-9-1 .content.content-left {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .window-container .window-content-9-1 .content.content-left .main-image {
@@ -1045,7 +1061,7 @@ body {
 }
 
 .window-container .window-content-9-2 .content.content-left .main-image {
-  max-height: 70%;
+  max-height: 80%;
 }
 
 .window-container .window-content-9-2 .content.content-right {

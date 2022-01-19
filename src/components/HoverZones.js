@@ -101,7 +101,7 @@ export class HoverZones extends Component {
     let posY = (e.pageY / window.screen.availHeight) * 100;
     this.setState({ posX: posX, posY: posY });
 
-    if (this.state.posX && this.state.posY && true) {
+    if (this.state.posX && this.state.posY) {
       console.log("start");
       console.log(Math.floor(this.state.posX), Math.floor(this.state.posY));
       console.log(Math.floor(posX - this.state.posX), Math.floor(posY - this.state.posY));
@@ -112,7 +112,9 @@ export class HoverZones extends Component {
     const ornamentHoverZones = ["left", "right", "corner"];
 
     return (
-      <div className="hover-zones-container" ref={this.hoverZonesContainerRef} key={`hoverZonesKey${this.props.page}${this.props.language}`} onClick={(e) => this.zoneCoordinatesClicked(e)}>
+      <div className="hover-zones-container" ref={this.hoverZonesContainerRef} key={`hoverZonesKey${this.props.page}${this.props.language}`} 
+      //onClick={(e) => this.zoneCoordinatesClicked(e)}
+      >
         {hoverZones[this.props.page].box.map((hoverZone, index) => {
           return (
             <div
