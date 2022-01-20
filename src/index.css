@@ -103,7 +103,7 @@ body {
 }
 
 .white-box-hover-border:after {
-  border: 25px transparent white;
+  border: 0 solid white;
   content: '';
   position: absolute;
   top: 0;
@@ -114,9 +114,10 @@ body {
   left: calc(-25px);
   bottom: calc(-25px);
   right: calc(-25px);
-  border: 0 solid white;
   -webkit-transition: 0.7s all ease;
   transition: 0.7s all ease;
+  -webkit-box-shadow: 0 0 4px 5px white;
+          box-shadow: 0 0 4px 5px white;
 }
 
 .white-box-hover-border:hover {
@@ -124,7 +125,7 @@ body {
 }
 
 .white-box-hover-border:hover:after {
-  border: 25px solid white;
+  border: 30px solid white;
 }
 
 .hand-image {

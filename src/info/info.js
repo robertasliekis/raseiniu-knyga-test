@@ -36,7 +36,7 @@ const hoverZones = [
         posX: 10,
         posY: 64,
         width: 20,
-        height: 23,
+        height: 22.5,
         images: [
           {
             imageText: [
@@ -48,9 +48,9 @@ const hoverZones = [
         ],
       },
       {
-        posX: 63,
+        posX: 63.5,
         posY: 10,
-        width: 24,
+        width: 23,
         height: 46,
         images: [
           {
@@ -105,9 +105,9 @@ const hoverZones = [
     page: 2,
     box: [
       {
-        posX: 10,
-        posY: 20,
-        width: 19,
+        posX: 10.5,
+        posY: 20.3,
+        width: 18.1,
         height: 33,
         images: [
           {
@@ -122,7 +122,7 @@ const hoverZones = [
       {
         posX: 17,
         posY: 60,
-        width: 21,
+        width: 20.5,
         height: 26,
         images: [
           {
@@ -135,10 +135,10 @@ const hoverZones = [
         ],
       },
       {
-        posX: 56.5,
-        posY: 8,
-        width: 22,
-        height: 27,
+        posX: 56.7,
+        posY: 8.5,
+        width: 21.5,
+        height: 26,
         images: [
           {
             imageText: [],
@@ -155,9 +155,9 @@ const hoverZones = [
       },
       {
         posX: 57,
-        posY: 54,
+        posY: 54.5,
         width: 20,
-        height: 25,
+        height: 24,
         images: [
           {
             imageText: [],
@@ -176,10 +176,10 @@ const hoverZones = [
         ],
       },
       {
-        posX: 80,
-        posY: 38,
-        width: 10,
-        height: 19,
+        posX: 80.5,
+        posY: 38.8,
+        width: 8.5,
+        height: 18,
         images: [
           {
             imageText: [],
@@ -196,9 +196,9 @@ const hoverZones = [
     page: 3,
     box: [
       {
-        posX: 11,
+        posX: 11.3,
         posY: 23,
-        width: 12,
+        width: 11.7,
         height: 33,
         images: [
           {
@@ -212,9 +212,9 @@ const hoverZones = [
       },
       {
         posX: 9,
-        posY: 67,
-        width: 21,
-        height: 19,
+        posY: 67.5,
+        width: 20.3,
+        height: 18,
         video: true,
         footage: page3video,
         images: [
@@ -231,7 +231,7 @@ const hoverZones = [
       {
         posX: 27,
         posY: 39,
-        width: 21,
+        width: 20,
         height: 23,
         images: [
           {
@@ -259,9 +259,9 @@ const hoverZones = [
       },
       {
         posX: 54,
-        posY: 10,
+        posY: 11,
         width: 14,
-        height: 38,
+        height: 36.5,
         images: [
           {
             imageText: [],
@@ -319,7 +319,7 @@ const hoverZones = [
         ],
       },
       {
-        posX: 72,
+        posX: 72.3,
         posY: 12,
         width: 14,
         height: 22,
@@ -346,10 +346,10 @@ const hoverZones = [
     page: 4,
     box: [
       {
-        posX: 12,
-        posY: 21,
-        width: 31,
-        height: 22,
+        posX: 12.3,
+        posY: 21.4,
+        width: 30.6,
+        height: 21.5,
         images: [
           {
             imageText: [],
@@ -362,9 +362,9 @@ const hoverZones = [
         ],
       },
       {
-        posX: 11,
+        posX: 11.5,
         posY: 60,
-        width: 12,
+        width: 11.5,
         height: 25,
         images: [
           {
@@ -390,10 +390,10 @@ const hoverZones = [
         ],
       },
       {
-        posX: 28,
-        posY: 49,
-        width: 18,
-        height: 18,
+        posX: 28.7,
+        posY: 49.4,
+        width: 17.5,
+        height: 17.5,
         images: [
           {
             imageText: [],
@@ -405,10 +405,10 @@ const hoverZones = [
         ],
       },
       {
-        posX: 55,
-        posY: 23,
-        width: 15,
-        height: 33,
+        posX: 56,
+        posY: 23.5,
+        width: 13.5,
+        height: 31,
         images: [
           {
             png: true,
@@ -420,12 +420,12 @@ const hoverZones = [
           },
         ],
       },
-      { posX: 61, posY: 67, width: 22, height: 20, video: true, footage: page4video, images: [{ imageText: [], description: [] }] },
+      { posX: 62, posY: 68, width: 20, height: 18, video: true, footage: page4video, images: [{ imageText: [], description: [] }] },
       {
-        posX: 76,
-        posY: 9,
-        width: 14,
-        height: 26,
+        posX: 76.5,
+        posY: 10,
+        width: 12,
+        height: 25,
         images: [
           {
             png: true,
@@ -443,10 +443,10 @@ const hoverZones = [
     page: 5,
     box: [
       {
-        posX: 11,
-        posY: 34,
-        width: 35,
-        height: 31,
+        posX: 11.5,
+        posY: 35.3,
+        width: 33.5,
+        height: 29.5,
         video: true,
         footage: page5video,
         images: [
@@ -462,10 +462,10 @@ const hoverZones = [
     page: 6,
     box: [
       {
-        posX: 9,
-        posY: 19,
-        width: 13,
-        height: 38,
+        posX: 9.5,
+        posY: 19.5,
+        width: 12.2,
+        height: 37,
         images: [
           {
             imageText: [],
@@ -499,10 +499,10 @@ const hoverZones = [
         ],
       },
       {
-        posX: 64,
-        posY: 8,
-        width: 18,
-        height: 39,
+        posX: 64.5,
+        posY: 10,
+        width: 17.5,
+        height: 37,
         images: [
           {
             imageText: [],
@@ -521,10 +521,10 @@ const hoverZones = [
         ],
       },
       {
-        posX: 54,
-        posY: 55,
-        width: 14,
-        height: 33,
+        posX: 55,
+        posY: 57,
+        width: 12.5,
+        height: 31,
         images: [
           {
             imageText: [],
@@ -549,10 +549,10 @@ const hoverZones = [
     page: 7,
     box: [
       {
-        posX: 16,
+        posX: 17,
         posY: 32,
-        width: 20,
-        height: 55,
+        width: 19,
+        height: 53.5,
         images: [
           { imageText: [], description: [] },
           { imageText: [], description: [] },
@@ -562,10 +562,10 @@ const hoverZones = [
         ],
       },
       {
-        posX: 55,
-        posY: 24,
-        width: 34,
-        height: 40,
+        posX: 56,
+        posY: 24.5,
+        width: 32.5,
+        height: 39,
         images: [
           {
             imageText: [],
@@ -590,9 +590,9 @@ const hoverZones = [
     page: 8,
     box: [
       {
-        posX: 10,
+        posX: 10.5,
         posY: 22,
-        width: 14,
+        width: 12.3,
         height: 33,
         images: [
           {
@@ -610,9 +610,9 @@ const hoverZones = [
         ],
       },
       {
-        posX: 22,
-        posY: 63,
-        width: 24,
+        posX: 22.5,
+        posY: 63.3,
+        width: 22.6,
         height: 23,
         images: [
           {
@@ -639,9 +639,9 @@ const hoverZones = [
         ],
       },
       {
-        posX: 55,
+        posX: 55.5,
         posY: 8,
-        width: 23,
+        width: 21.5,
         height: 37,
         images: [
           {
@@ -661,10 +661,10 @@ const hoverZones = [
         ],
       },
       {
-        posX: 53,
-        posY: 60,
-        width: 24,
-        height: 25,
+        posX: 53.5,
+        posY: 60.5,
+        width: 23.5,
+        height: 24.5,
         images: [
           {
             imageText: [],
@@ -677,9 +677,9 @@ const hoverZones = [
       },
       {
         posX: 79,
-        posY: 48,
+        posY: 49.5,
         width: 10,
-        height: 14,
+        height: 13,
         images: [
           {
             imageText: [],
@@ -709,10 +709,10 @@ const hoverZones = [
     page: 9,
     box: [
       {
-        posX: 9,
-        posY: 24,
-        width: 15,
-        height: 35,
+        posX: 10,
+        posY: 25,
+        width: 13,
+        height: 34,
         images: [
           {
             imageText: [],
@@ -724,9 +724,9 @@ const hoverZones = [
         ],
       },
       {
-        posX: 29,
+        posX: 30,
         posY: 55,
-        width: 14,
+        width: 12.5,
         height: 32,
         images: [
           {
@@ -752,8 +752,8 @@ const hoverZones = [
           },
         ],
       },
-      { posX: 75, posY: 10, width: 12, height: 26, fullscreen: true, images: [{ imageText: [], description: [] }] },
-      { posX: 56, posY: 44, width: 24, height: 29, fullscreen: true, images: [{ imageText: [], description: [] }] },
+      { posX: 75, posY: 11.5, width: 12, height: 23, fullscreen: true, images: [{ imageText: [], description: [] }] },
+      { posX: 57, posY: 45, width: 22, height: 27.5, fullscreen: true, images: [{ imageText: [], description: [] }] },
     ],
   },
   {
@@ -761,9 +761,9 @@ const hoverZones = [
     box: [
       {
         posX: 10,
-        posY: 20,
+        posY: 21.5,
         width: 15,
-        height: 34,
+        height: 33,
         images: [
           {
             imageText: [],
@@ -782,10 +782,10 @@ const hoverZones = [
         ],
       },
       {
-        posX: 15,
-        posY: 61,
-        width: 26,
-        height: 27,
+        posX: 16.5,
+        posY: 61.5,
+        width: 24,
+        height: 26,
         images: [
           {
             imageText: [],
@@ -798,9 +798,9 @@ const hoverZones = [
       },
       {
         posX: 56,
-        posY: 10,
-        width: 10,
-        height: 20,
+        posY: 11.5,
+        width: 9.5,
+        height: 18,
         images: [
           {
             imageText: [],
@@ -814,9 +814,9 @@ const hoverZones = [
       },
       {
         posX: 55,
-        posY: 62,
+        posY: 63,
         width: 26,
-        height: 22,
+        height: 20,
 
         images: [
           {
@@ -828,7 +828,7 @@ const hoverZones = [
           },
         ],
       },
-      { posX: 74, posY: 12, width: 14, height: 41, images: [{ imageText: [], description: ["Daugirdų giminės medis", "The Daugirdai family tree"] }] },
+      { posX: 75, posY: 12, width: 12.3, height: 40, images: [{ imageText: [], description: ["Daugirdų giminės medis", "The Daugirdai family tree"] }] },
     ],
   },
 ];
