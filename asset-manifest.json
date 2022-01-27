@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/raseiniu-knyga-test/static/css/main.e80a0c63.chunk.css",
-    "main.js": "/raseiniu-knyga-test/static/js/main.fd66465a.chunk.js",
-    "main.js.map": "/raseiniu-knyga-test/static/js/main.fd66465a.chunk.js.map",
+    "main.css": "/raseiniu-knyga-test/static/css/main.71e6aab1.chunk.css",
+    "main.js": "/raseiniu-knyga-test/static/js/main.bf1d85fa.chunk.js",
+    "main.js.map": "/raseiniu-knyga-test/static/js/main.bf1d85fa.chunk.js.map",
     "runtime-main.js": "/raseiniu-knyga-test/static/js/runtime-main.ad67afee.js",
     "runtime-main.js.map": "/raseiniu-knyga-test/static/js/runtime-main.ad67afee.js.map",
     "static/js/2.b6d9bc95.chunk.js": "/raseiniu-knyga-test/static/js/2.b6d9bc95.chunk.js",
     "static/js/2.b6d9bc95.chunk.js.map": "/raseiniu-knyga-test/static/js/2.b6d9bc95.chunk.js.map",
     "index.html": "/raseiniu-knyga-test/index.html",
-    "precache-manifest.b63a585e9cda812ff0f89488de3377b0.js": "/raseiniu-knyga-test/precache-manifest.b63a585e9cda812ff0f89488de3377b0.js",
+    "precache-manifest.c10eee1ed888944c123bed9197c2481b.js": "/raseiniu-knyga-test/precache-manifest.c10eee1ed888944c123bed9197c2481b.js",
     "service-worker.js": "/raseiniu-knyga-test/service-worker.js",
-    "static/css/main.e80a0c63.chunk.css.map": "/raseiniu-knyga-test/static/css/main.e80a0c63.chunk.css.map",
+    "static/css/main.71e6aab1.chunk.css.map": "/raseiniu-knyga-test/static/css/main.71e6aab1.chunk.css.map",
     "static/js/2.b6d9bc95.chunk.js.LICENSE.txt": "/raseiniu-knyga-test/static/js/2.b6d9bc95.chunk.js.LICENSE.txt",
     "static/media/1_1.png": "/raseiniu-knyga-test/static/media/1_1.b29408a7.png",
     "static/media/1_1.jpg": "/raseiniu-knyga-test/static/media/1_1.f51e7e78.jpg",
@@ -39,8 +39,11 @@
     "static/media/4_5.jpg": "/raseiniu-knyga-test/static/media/4_5.8aaabf51.jpg",
     "static/media/4_6.jpg": "/raseiniu-knyga-test/static/media/4_6.62158cad.jpg",
     "static/media/5_1.jpg": "/raseiniu-knyga-test/static/media/5_1.ddf6cfb5.jpg",
+    "static/media/5_1.png": "/raseiniu-knyga-test/static/media/5_1.1037ef2b.png",
     "static/media/5_1.mp4": "/raseiniu-knyga-test/static/media/5_1.2c99ffcb.mp4",
     "static/media/5_2.jpg": "/raseiniu-knyga-test/static/media/5_2.fd4dea36.jpg",
+    "static/media/5_2.png": "/raseiniu-knyga-test/static/media/5_2.252d1b0d.png",
+    "static/media/5_3.png": "/raseiniu-knyga-test/static/media/5_3.07542562.png",
     "static/media/6_1.jpg": "/raseiniu-knyga-test/static/media/6_1.4c7cae42.jpg",
     "static/media/6_1.png": "/raseiniu-knyga-test/static/media/6_1.cdbc2838.png",
     "static/media/6_2.jpg": "/raseiniu-knyga-test/static/media/6_2.5eb93e80.jpg",
@@ -62,7 +65,7 @@
   "entrypoints": [
     "static/js/runtime-main.ad67afee.js",
     "static/js/2.b6d9bc95.chunk.js",
-    "static/css/main.e80a0c63.chunk.css",
-    "static/js/main.fd66465a.chunk.js"
+    "static/css/main.71e6aab1.chunk.css",
+    "static/js/main.bf1d85fa.chunk.js"
   ]
 }
