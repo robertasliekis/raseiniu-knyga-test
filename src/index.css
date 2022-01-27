@@ -48,7 +48,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   line-height: 25px;
   height: 100%;
   width: 100%;
@@ -104,7 +104,7 @@ body {
 
 .white-box-hover-border:after {
   border: 0 solid white;
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1094,6 +1094,10 @@ body {
 
 .window-container .window-content-10-5 .content.content-left {
   padding: 4%;
+}
+
+.window-container .window-content-10-5 .content.content-left .main-image {
+  height: 83%;
 }
 
 .window-container .window-content .video-container {

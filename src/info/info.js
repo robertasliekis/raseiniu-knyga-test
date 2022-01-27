@@ -817,7 +817,6 @@ const hoverZones = [
         posY: 63,
         width: 26,
         height: 20,
-
         images: [
           {
             imageText: [],
@@ -828,7 +827,17 @@ const hoverZones = [
           },
         ],
       },
-      { posX: 75, posY: 12, width: 12.3, height: 40, images: [{ imageText: [], description: ["Daugirdų giminės medis", "The Daugirdai family tree"] }] },
+      {
+        posX: 75,
+        posY: 12,
+        width: 12.3,
+        height: 40,
+        images: [
+          { png: true, imageText: [], description: ["Daugirdų giminės medis", "The Daugirdai family tree"] },
+          { png: true, imageText: [], description: ["Daugirdų giminės medis", "The Daugirdai family tree"] },
+          { png: true, imageText: [], description: ["Daugirdų giminės medis", "The Daugirdai family tree"] },
+        ],
+      },
     ],
   },
 ];
