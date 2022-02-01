@@ -98,7 +98,7 @@ export class InfoWindow extends Component {
       videoPlaying: false,
       activeVideo: null,
       activePage: 0,
-      hoveredImageIndex: 0
+      hoveredImageIndex: 0,
     });
   }
 
@@ -193,9 +193,9 @@ export class InfoWindow extends Component {
       const imageFormat = this.state.galleryImages[key]?.png ? "png" : "jpg";
       imagePath = require(`../images/gallery/${this.state.activePage + 1}/${this.props.contentIndex + 1}_${key + 1}.${imageFormat}`);
     } catch (err) {
-      imagePath = '';
+      imagePath = "";
     }
-    return <img src={imagePath} className={className} alt=""/>
+    return <img src={imagePath} className={className} alt="" />;
   }
 
   render() {
@@ -209,7 +209,8 @@ export class InfoWindow extends Component {
                 <div className="gallery">
                   {this.state.galleryImages.map((image, key) => {
                     return this.state.activeImageIndex !== key ? (
-                      <div className="image-wrapper" 
+                      <div
+                        className="image-wrapper"
                         key={key}
                         onMouseEnter={() => {
                           this.mouseEnterHandler("change-image");
@@ -225,7 +226,7 @@ export class InfoWindow extends Component {
                   })}
                 </div>
               ) : null}
-              {this.state.imageTextBelow.length ? <div className="text-below-image">{this.state.imageTextBelow[this.props.languageIndex]}</div> : null}
+              {this.state.imageTextBelow.length ? <div className="text-below-image" dangerouslySetInnerHTML={{ __html: this.state.imageTextBelow[this.props.languageIndex] }}></div> : null}
             </div>
             {this.state.imageDescription.length ? <div className="content content-right" dangerouslySetInnerHTML={{ __html: this.state.imageDescription[this.props.languageIndex] }}></div> : null}
             {this.state.activeVideo ? (

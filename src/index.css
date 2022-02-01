@@ -674,6 +674,7 @@ body {
 
 .window-container .window-content-2-3 .content.content-right {
   padding-top: 20%;
+  padding-right: 4%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;

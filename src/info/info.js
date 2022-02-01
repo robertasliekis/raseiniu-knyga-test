@@ -111,7 +111,10 @@ const hoverZones = [
         height: 33,
         images: [
           {
-            imageText: ["Viršuje - Plemborgo dvaro nuotrauka iš lėktuvo. XX a. I p.", "Above - photo of Plemborg manor from an airplane. 1st part of 20th century."],
+            imageText: [
+              "Viršuje - Plemborgo dvaro nuotrauka iš lėktuvo. XX a. I p.<br> Apačioje - dvaras XIX a. pabaigoje, iki I Pasaulinio karo.",
+              "Above - photo of Plemborg manor from an airplane. 1st part of 20th century.<br>At the bottom - the manor at the end of 19th century till World War I.",
+            ],
             description: [
               "T. Daugirdo draugas lenkų istorikas Ludwik Krzywicki rašė: ‚‚Vienas Daugirdo protėvių iš Lenkijos karalių ir Lietuvos didžiųjų kunigaikščių gavo gabalą žemės prie Dubysos, prie kurios mūsų laikais išsidėstė Plemborgo plotai – dvaras, kuris apie porą šimtų metų neišėjo iš palikuonių rankų. Žemių židinys buvo Plemborgas, lietuviškai Plembaris, nuo mažo upelio Plembis.... Dvaras buvo sulipdytas iš priestatų, daugiaaukštis,…, su dviem dideliais svečių kambariais pirmame aukšte, o žemutiniame aukšte su dideliu valgomuoju, milžinišku salonu, kambariais vyresniesiems giminės atstovams, kambarėliais jaunimui.“ ",
               "A friend of T. Daugirdas, Ludwik Krzywicki, a Polish historian, once wrote “One of the ancestors of Daugirdas from the kings of Poland and the Grand Dukes of Lithuania received a piece of land near the river Dubysa, where later the manor of Plemborg was located.  The manor did not pass from the hands of the descendants for about a couple of hundred years. The centre of the territory was Plemborg or Plembaris in Lithuanian, from the small stream Plembis .... The manor was glued from the annexes, multi-storey, ..., with two large guest rooms on the first floor and large dining room, a huge salon, rooms for the senior family members and young people on the ground floor.”",
@@ -147,7 +150,7 @@ const hoverZones = [
           {
             imageText: [],
             description: [
-              `Kristinos Daugirdaitės-Tamonienės akvarelėje – Plemborgo dvaras iš pietų (nugaros) pusės.`,
+              `Kristinos Daugirdaitės-Tamonienės<br> akvarelėje – Plemborgo dvaras iš pietų (nugaros) pusės.`,
               `Plemborg manor from the south (back) side. Kristina Daugirdaitė-Tamonienė's watercolour.`,
             ],
           },
@@ -162,14 +165,14 @@ const hoverZones = [
           {
             imageText: [],
             description: [
-              "Vyriausias archeologo Daugirdo sūnus Mykolas (1884-1952) ,buvo pasiutęs automobilistas. Šeimoje kalbama, kad jis buvo pirmasis Žemaitijoje, įsigijęs automobilį. Jeigu ne Žemaitijoje, tai Raseinių krašte - tikrai. Kai tik galėjo nusipirkti Ford Model T, Mykolas tuoj jį įsigijo. Niekas apylinkėse automobilių neturėjo. Kuras buvo žibalas, jį pirko pas žydą Ariogalos krautuvėje, o važinėjo kas dieną, su reikalais ir be reikalų. Mykolas važinėjo į Raseinius, Kauną, Vilnių, Minską... Imdavo šeimos narius pasivažinėjimui.“",
+              "Vyriausias archeologo Daugirdo sūnus Mykolas (1884-1952), buvo pasiutęs automobilistas. Šeimoje kalbama, kad jis buvo pirmasis Žemaitijoje, įsigijęs automobilį. Jeigu ne Žemaitijoje, tai Raseinių krašte - tikrai. Kai tik galėjo nusipirkti Ford Model T, Mykolas tuoj jį įsigijo. Niekas apylinkėse automobilių neturėjo. Kuras buvo žibalas, jį pirko pas žydą Ariogalos krautuvėje, o važinėjo kas dieną, su reikalais ir be reikalų. Mykolas važinėjo į Raseinius, Kauną, Vilnių, Minską... Imdavo šeimos narius pasivažinėjimui.“",
               `Mykolas (1884-1952), who was the eldest son of the archaeologist Daugirdas, "was a furious motorist. It is said in the family, that he was the first in Samogitia to buy a car. If not in Samogitia, then in Raseiniai region for sure. As soon as he could buy a Ford Model T, Mykolas immediately bought it. No one in the area had a car. The fuel was kerosene, he bought it from a Jew in a store in Ariogala, and he drove every day, despite having a reason or not. Mykolas travelled to Raseiniai, Kaunas, Vilnius, Minsk ... He used to take family members for a ride.”`,
             ],
           },
           {
             imageText: [],
             description: [
-              "Vyriausias archeologo Daugirdo sūnus Mykolas (1884-1952) ,buvo pasiutęs automobilistas. Šeimoje kalbama, kad jis buvo pirmasis Žemaitijoje, įsigijęs automobilį. Jeigu ne Žemaitijoje, tai Raseinių krašte - tikrai. Kai tik galėjo nusipirkti Ford Model T, Mykolas tuoj jį įsigijo. Niekas apylinkėse automobilių neturėjo. Kuras buvo žibalas, jį pirko pas žydą Ariogalos krautuvėje, o važinėjo kas dieną, su reikalais ir be reikalų. Mykolas važinėjo į Raseinius, Kauną, Vilnių, Minską... Imdavo šeimos narius pasivažinėjimui.“",
+              "Vyriausias archeologo Daugirdo sūnus Mykolas (1884-1952), buvo pasiutęs automobilistas. Šeimoje kalbama, kad jis buvo pirmasis Žemaitijoje, įsigijęs automobilį. Jeigu ne Žemaitijoje, tai Raseinių krašte - tikrai. Kai tik galėjo nusipirkti Ford Model T, Mykolas tuoj jį įsigijo. Niekas apylinkėse automobilių neturėjo. Kuras buvo žibalas, jį pirko pas žydą Ariogalos krautuvėje, o važinėjo kas dieną, su reikalais ir be reikalų. Mykolas važinėjo į Raseinius, Kauną, Vilnių, Minską... Imdavo šeimos narius pasivažinėjimui.“",
               `Mykolas (1884-1952), who was the eldest son of the archaeologist Daugirdas, "was a furious motorist. It is said in the family, that he was the first in Samogitia to buy a car. If not in Samogitia, then in Raseiniai region for sure. As soon as he could buy a Ford Model T, Mykolas immediately bought it. No one in the area had a car. The fuel was kerosene, he bought it from a Jew in a store in Ariogala, and he drove every day, despite having a reason or not. Mykolas travelled to Raseiniai, Kaunas, Vilnius, Minsk ... He used to take family members for a ride.”`,
             ],
           },
@@ -571,14 +574,14 @@ const hoverZones = [
             imageText: [],
             png: true,
             description: [
-              "XX a. pradžioje Daugirdas ėmė reikštis ne tik kaip muziejininkas ir archeologas, bet ir kaip rašytojas. Išspausdino eilę novelių, scenos veikalų, vadovavo „Dainos“ draugijai, režisavo lietuviškus saviveiklinius vaidinimus, pats piešė dekoracijas. Raseinių kraštui aktualus Daugirdo scenos veikalas „Girkalnio užgavėnės”, kuriame randame to meto etnografinių detalių ir socialinių santykių atspindžių.",
+              "XX a. pradžioje Daugirdas ėmė reikštis ne tik kaip muziejininkas ir archeologas, bet ir kaip rašytojas. Išspausdino eilę novelių, scenos veikalų, vadovavo „Dainos“ draugijai, režisavo lietuviškus saviveiklinius vaidinimus, pats piešė dekoracijas. Raseinių kraštui aktualus Daugirdo scenos veikalas „Girkalnio Užgavėnės”, kuriame randame to meto etnografinių detalių ir socialinių santykių atspindžių.",
               'At the beginning of 20th century Daugirdas began to express himself not only as a museologist and archaeologist, but also as a writer. He published a number of short stories, stage works, was the head of the society "Daina", directed Lithuanian amateur performances and drew the decorations himself. The stage work “Mardi Gras of Girkalnis”, in which we find reflections on the ethnographic details and social relations of that time, is meaningful to Raseiniai region.',
             ],
           },
           {
             imageText: [],
             description: [
-              "XX a. pradžioje Daugirdas ėmė reikštis ne tik kaip muziejininkas ir archeologas, bet ir kaip rašytojas. Išspausdino eilę novelių, scenos veikalų, vadovavo „Dainos“ draugijai, režisavo lietuviškus saviveiklinius vaidinimus, pats piešė dekoracijas. Raseinių kraštui aktualus Daugirdo scenos veikalas „Girkalnio užgavėnės”, kuriame randame to meto etnografinių detalių ir socialinių santykių atspindžių.",
+              "XX a. pradžioje Daugirdas ėmė reikštis ne tik kaip muziejininkas ir archeologas, bet ir kaip rašytojas. Išspausdino eilę novelių, scenos veikalų, vadovavo „Dainos“ draugijai, režisavo lietuviškus saviveiklinius vaidinimus, pats piešė dekoracijas. Raseinių kraštui aktualus Daugirdo scenos veikalas „Girkalnio Užgavėnės”, kuriame randame to meto etnografinių detalių ir socialinių santykių atspindžių.",
               'At the beginning of 20th century Daugirdas began to express himself not only as a museologist and archaeologist, but also as a writer. He published a number of short stories, stage works, was the head of the society "Daina", directed Lithuanian amateur performances and drew the decorations himself. The stage work “Mardi Gras of Girkalnis”, in which we find reflections on the ethnographic details and social relations of that time, is meaningful to Raseiniai region.',
             ],
           },
@@ -647,14 +650,14 @@ const hoverZones = [
           {
             imageText: [],
             description: [
-              "T. Daugirdo dėka, Kauno miesto muziejus virsta tikra tokio vardo verta institucija. Jo nuopelnus labai tiksliai apibūdino jos amžininkas kultūros istorikas M. Brenšteinas, pabrėždamas, kad iš ankstesnės besisteminės daiktų kolekcijos, savo rinkinio pagrindu T. Daugirdas sukūrė tikrai pavyzdinį provincijos muziejų, kuris apėmė kelias sales. Pirmojo Pasaulinio karo metais, per vokiečių okupaciją, jis liko Kaune saugoti šio muziejaus, kad šis nebūtų perimtas ir išardytas.",
+              "T. Daugirdo dėka, Kauno miesto muziejus virsta tikra tokio vardo verta institucija. Jo nuopelnus labai tiksliai apibūdino kultūros istorikas M. Brenšteinas, pabrėždamas, kad iš ankstesnės besisteminės daiktų kolekcijos, savo rinkinio pagrindu T. Daugirdas sukūrė tikrai pavyzdinį provincijos muziejų, kuris apėmė kelias sales. Pirmojo Pasaulinio karo metais, per vokiečių okupaciją, jis liko Kaune saugoti šio muziejaus, kad šis nebūtų perimtas ir išardytas.",
               "Kaunas City Museum became the institution worthy the name because of T. Daugirdas. His merits were very precisely described by the contemporary cultural historian M. Brenstein. He emphasized that from the previous non-systematic collection of objects, T. Daugirdas, created a truly exemplary provincial museum based on his collection, laid out in several halls. During the German occupation at the time of World War I, he remained in Kaunas to guard this museum so that it would not be taken over and dismantled.",
             ],
           },
           {
             imageText: [],
             description: [
-              "T. Daugirdo dėka, Kauno miesto muziejus virsta tikra tokio vardo verta institucija. Jo nuopelnus labai tiksliai apibūdino jos amžininkas kultūros istorikas M. Brenšteinas, pabrėždamas, kad iš ankstesnės besisteminės daiktų kolekcijos, savo rinkinio pagrindu T. Daugirdas sukūrė tikrai pavyzdinį provincijos muziejų, kuris apėmė kelias sales. Pirmojo Pasaulinio karo metais, per vokiečių okupaciją, jis liko Kaune saugoti šio muziejaus, kad šis nebūtų perimtas ir išardytas.",
+              "T. Daugirdo dėka, Kauno miesto muziejus virsta tikra tokio vardo verta institucija. Jo nuopelnus labai tiksliai apibūdino kultūros istorikas M. Brenšteinas, pabrėždamas, kad iš ankstesnės besisteminės daiktų kolekcijos, savo rinkinio pagrindu T. Daugirdas sukūrė tikrai pavyzdinį provincijos muziejų, kuris apėmė kelias sales. Pirmojo Pasaulinio karo metais, per vokiečių okupaciją, jis liko Kaune saugoti šio muziejaus, kad šis nebūtų perimtas ir išardytas.",
               "Kaunas City Museum became the institution worthy the name because of T. Daugirdas. His merits were very precisely described by the contemporary cultural historian M. Brenstein. He emphasized that from the previous non-systematic collection of objects, T. Daugirdas, created a truly exemplary provincial museum based on his collection, laid out in several halls. During the German occupation at the time of World War I, he remained in Kaunas to guard this museum so that it would not be taken over and dismantled.",
             ],
           },
@@ -833,9 +836,30 @@ const hoverZones = [
         width: 12.3,
         height: 40,
         images: [
-          { png: true, imageText: [], description: ["Daugirdų giminės medis", "The Daugirdai family tree"] },
-          { png: true, imageText: [], description: ["Daugirdų giminės medis", "The Daugirdai family tree"] },
-          { png: true, imageText: [], description: ["Daugirdų giminės medis", "The Daugirdai family tree"] },
+          {
+            png: true,
+            imageText: [],
+            description: [
+              "Daugirdų geneologinis medis nuo XV a., Jono Daugirdo laikų. Viršuje, melsvuose langeliuose, Tado Daugirdo tėvo — Mykolo Daugirdo (1830 - 1903), palikuonys.",
+              "Daugirdai genealogical tree from the 15th century, the time of Jonas Daugirdas. Above, in the blue boxes, are the descendants of Tadas Daugirdas' father, Mykolas Daugirdas (1830 - 1903).",
+            ],
+          },
+          {
+            png: true,
+            imageText: [],
+            description: [
+              "Daugirdų geneologinis medis nuo XV a., Jono Daugirdo laikų. Viršuje, melsvuose langeliuose, Tado Daugirdo tėvo — Mykolo Daugirdo (1830 - 1903), palikuonys.",
+              "Daugirdai genealogical tree from the 15th century, the time of Jonas Daugirdas. Above, in the blue boxes, are the descendants of Tadas Daugirdas' father, Mykolas Daugirdas (1830 - 1903).",
+            ],
+          },
+          {
+            png: true,
+            imageText: [],
+            description: [
+              "Daugirdų geneologinis medis nuo XV a., Jono Daugirdo laikų. Viršuje, melsvuose langeliuose, Tado Daugirdo tėvo — Mykolo Daugirdo (1830 - 1903), palikuonys.",
+              "Daugirdai genealogical tree from the 15th century, the time of Jonas Daugirdas. Above, in the blue boxes, are the descendants of Tadas Daugirdas' father, Mykolas Daugirdas (1830 - 1903).",
+            ],
+          },
         ],
       },
     ],
