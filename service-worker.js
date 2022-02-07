@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/raseiniu-knyga-test/precache-manifest.6590a84c947138e50842de607736e69c.js"
+  "/raseiniu-knyga-test/precache-manifest.cfcbd0950385bc21ecfabbc34fa06218.js"
 );
 
 self.addEventListener('message', (event) => {
