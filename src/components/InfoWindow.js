@@ -47,17 +47,9 @@ export class InfoWindow extends Component {
           imageDescription: this.state.galleryImages[this.state.hoveredImageIndex].description,
         });
         break;
-
       case "close":
         this.closeWindow();
-        this.setState({
-          hoveredType: "",
-          activeImageIndex: 0,
-          galleryImages: [],
-          imageDescription: [],
-        });
         break;
-
       case "play-video":
         this.videoRef.current.play();
         this.setState({
@@ -82,7 +74,7 @@ export class InfoWindow extends Component {
       this.blockOverlayRef.current.classList.remove("block-overlay-animation");
     }
 
-    let plantClose = { contentIndex: this.props.contentIndex, open: false };
+    let plantClose = { contentIndex: 0, open: false };
     this.props.mouseEnterContent(plantClose);
     this.props.mouseEnterMovie(false);
 
@@ -92,6 +84,7 @@ export class InfoWindow extends Component {
     }
 
     this.setState({
+      hoveredType: "",
       galleryImages: [],
       imageDescription: [],
       imageTextBelow: [],
@@ -99,6 +92,7 @@ export class InfoWindow extends Component {
       activeVideo: null,
       activePage: 0,
       hoveredImageIndex: 0,
+      activeImageIndex: 0,
     });
   }
 
@@ -173,8 +167,8 @@ export class InfoWindow extends Component {
         this.props.mouseEnterMovie(true);
       } else {
         let galleryImages = loadedContent.images;
-        let imageDescription = galleryImages[this.state.activeImageIndex].description;
-        let imageTextBelow = galleryImages[this.state.activeImageIndex].imageText;
+        let imageDescription = galleryImages[this.state.activeImageIndex]?.description;
+        let imageTextBelow = galleryImages[this.state.activeImageIndex]?.imageText;
 
         this.setState({
           galleryImages: galleryImages,
@@ -195,6 +189,7 @@ export class InfoWindow extends Component {
     } catch (err) {
       imagePath = "";
     }
+
     return <img src={imagePath} className={className} alt="" />;
   }
 
@@ -226,9 +221,9 @@ export class InfoWindow extends Component {
                   })}
                 </div>
               ) : null}
-              {this.state.imageTextBelow.length ? <div className="text-below-image" dangerouslySetInnerHTML={{ __html: this.state.imageTextBelow[this.props.languageIndex] }}></div> : null}
+              {this.state.imageTextBelow?.length ? <div className="text-below-image" dangerouslySetInnerHTML={{ __html: this.state.imageTextBelow[this.props.languageIndex] }}></div> : null}
             </div>
-            {this.state.imageDescription.length ? <div className="content content-right" dangerouslySetInnerHTML={{ __html: this.state.imageDescription[this.props.languageIndex] }}></div> : null}
+            {this.state.imageDescription?.length ? <div className="content content-right" dangerouslySetInnerHTML={{ __html: this.state.imageDescription[this.props.languageIndex] }}></div> : null}
             {this.state.activeVideo ? (
               <div className="video-container">
                 <video autoPlay ref={this.videoRef} key={`videoKey${this.props.languageIndex}${this.props.page}`}>

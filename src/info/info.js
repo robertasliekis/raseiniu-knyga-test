@@ -837,7 +837,6 @@ const hoverZones = [
         height: 40,
         images: [
           {
-            png: true,
             imageText: [],
             description: [
               "Daugirdų geneologinis medis nuo XV a., Jono Daugirdo laikų. Viršuje, melsvuose langeliuose, Tado Daugirdo tėvo — Mykolo Daugirdo (1830 - 1903), palikuonys.",
