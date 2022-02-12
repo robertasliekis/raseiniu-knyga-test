@@ -238,6 +238,7 @@ body {
   height: 100%;
   background-color: green;
   z-index: 25;
+  opacity: 1;
   opacity: 0;
 }
 
@@ -286,7 +287,6 @@ body {
 }
 
 .reset-box-container {
-  opacity: 0;
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -296,6 +296,7 @@ body {
   width: 100%;
   height: 100%;
   top: 50%;
+  opacity: 0;
 }
 
 .reset-box-container .reset-box {
@@ -311,7 +312,7 @@ body {
 }
 
 .reset-box-container .reset-box-bottom, .reset-box-container .reset-box-top {
-  height: 2rem;
+  height: 20px;
   width: 100vw;
 }
 
@@ -328,7 +329,7 @@ body {
 }
 
 .reset-box-container .reset-box-left, .reset-box-container .reset-box-right {
-  width: 2rem;
+  width: 20px;
   height: 100vh;
   top: 150%;
 }
@@ -597,13 +598,12 @@ body {
 
 .window-container .window-content .content .gallery .image-wrapper {
   height: 100%;
+  margin-right: 20px;
 }
 
 .window-container .window-content .content .gallery .image-wrapper .gallery-image {
   height: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  margin-right: 20px;
+  width: auto;
 }
 
 .window-container .window-content .content .gallery .image-wrapper:last-child {
@@ -650,6 +650,10 @@ body {
   height: 50%;
 }
 
+.window-container .window-content-2-1 .content.content-left .main-image {
+  height: 90%;
+}
+
 .window-container .window-content-2-2 .content.content-left, .window-container .window-content-2-2 .content.content-right {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -668,9 +672,9 @@ body {
 }
 
 .window-container .window-content-2-3 .content.content-left .gallery {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .window-container .window-content-2-3 .content.content-right {
@@ -725,7 +729,8 @@ body {
 }
 
 .window-container .window-content-3-4 .content.content-left {
-  padding-bottom: 2%;
+  padding-bottom: 3%;
+  padding-top: 3%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -809,6 +814,10 @@ body {
 
 .window-container .window-content-4-2 .content.content-right {
   text-align: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 23%;
 }
 
 .window-container .window-content-4-3 .content {
@@ -877,6 +886,7 @@ body {
 .window-container .window-content-7-1 .content.content-left {
   padding: 4%;
   width: 100%;
+  padding-bottom: 6%;
 }
 
 .window-container .window-content-7-1 .content.content-left .main-image {
@@ -1096,6 +1106,7 @@ body {
 
 .window-container .window-content-10-5 .content.content-left {
   padding: 4%;
+  padding-bottom: 6%;
 }
 
 .window-container .window-content-10-5 .content.content-left .main-image {

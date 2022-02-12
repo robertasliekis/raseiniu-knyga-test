@@ -18,7 +18,6 @@ export class InfoWindow extends Component {
       imageTextBelow: [],
       activeVideo: null,
       videoPlaying: false,
-      activePage: 0,
     };
 
     this.windowContainerRef = React.createRef();
@@ -44,8 +43,9 @@ export class InfoWindow extends Component {
       case "change-image":
         this.setState({
           activeImageIndex: this.state.hoveredImageIndex,
-          imageDescription: this.state.galleryImages[this.state.hoveredImageIndex].description,
         });
+
+        this.setContent();
         break;
       case "close":
         this.closeWindow();
@@ -65,6 +65,8 @@ export class InfoWindow extends Component {
         break;
       default:
     }
+
+    this.setState({ hovered: false, hoveredType: "" });
   };
 
   closeWindow() {
@@ -74,8 +76,7 @@ export class InfoWindow extends Component {
       this.blockOverlayRef.current.classList.remove("block-overlay-animation");
     }
 
-    let plantClose = { contentIndex: 0, open: false };
-    this.props.mouseEnterContent(plantClose);
+    this.props.mouseEnterContent({ contentIndex: 0, open: false });
     this.props.mouseEnterMovie(false);
 
     if (this.state.videoPlaying) {
@@ -86,11 +87,10 @@ export class InfoWindow extends Component {
     this.setState({
       hoveredType: "",
       galleryImages: [],
-      imageDescription: [],
-      imageTextBelow: [],
+      imageDescription: null,
+      imageTextBelow: null,
       videoPlaying: false,
       activeVideo: null,
-      activePage: 0,
       hoveredImageIndex: 0,
       activeImageIndex: 0,
     });
@@ -105,13 +105,11 @@ export class InfoWindow extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    if (this.state.hovered !== prevProps.hovered) {
+    if (this.state.hovered !== prevState.hovered) {
       if (this.state.hovered) {
         let hoverTime;
         if (this.state.hoveredType === "close") {
           hoverTime = 1200;
-        } else if (this.state.hoveredType === "scroll") {
-          hoverTime = 500;
         } else {
           hoverTime = 1000;
         }
@@ -121,8 +119,7 @@ export class InfoWindow extends Component {
       }
     }
 
-    if (this.props.page !== prevProps.page) {
-      this.setState({ activePage: 0 });
+    if (this.props.page !== prevProps.page || this.props.languageIndex !== prevProps.languageIndex) {
       this.closeWindow();
     }
 
@@ -138,6 +135,7 @@ export class InfoWindow extends Component {
         this.windowContainerRef.current.classList.remove("window-container-animation-class1");
         this.windowContainerRef.current.classList.add("window-container-animation-class2");
         this.blockOverlayRef.current.classList.remove("block-overlay-animation");
+        this.closeWindow();
       }
     }
 
@@ -148,33 +146,22 @@ export class InfoWindow extends Component {
     }
   }
 
-  componentDidMount() {
-    if (this.props.contentOpen) {
-      this.windowContainerRef.current.classList.remove("window-container-animation-class1");
-      this.windowContainerRef.current.classList.remove("window-container-animation-class2");
-      this.windowContainerRef.current.classList.add("window-container-animation-class1");
-
-      this.blockOverlayRef.current.classList.add("block-overlay-animation");
-      this.setContent();
-    }
-  }
-
   setContent() {
     let loadedContent = content[this.props.page].box[this.props.contentIndex];
+
     if (loadedContent) {
       if (loadedContent.video) {
         this.setState({ activeVideo: loadedContent.footage, videoPlaying: true });
         this.props.mouseEnterMovie(true);
       } else {
         let galleryImages = loadedContent.images;
-        let imageDescription = galleryImages[this.state.activeImageIndex]?.description;
-        let imageTextBelow = galleryImages[this.state.activeImageIndex]?.imageText;
+        let imageDescription = galleryImages[this.state.activeImageIndex]?.description[this.props.languageIndex];
+        let imageTextBelow = galleryImages[this.state.activeImageIndex]?.imageText[this.props.languageIndex];
 
         this.setState({
           galleryImages: galleryImages,
           imageDescription: imageDescription,
           imageTextBelow: imageTextBelow,
-          activePage: this.props.page,
         });
       }
     }
@@ -184,8 +171,9 @@ export class InfoWindow extends Component {
     let imagePath;
 
     try {
-      const imageFormat = this.state.galleryImages[key]?.png ? "png" : "jpg";
-      imagePath = require(`../images/gallery/${this.state.activePage + 1}/${this.props.contentIndex + 1}_${key + 1}.${imageFormat}`);
+      // const imageFormat = this.state.galleryImages[key]?.png ? "png" : "jpg";
+      // imagePath = require(`../images/gallery/${this.props.page + 1}/${this.props.contentIndex + 1}_${key + 1}.${imageFormat}`);
+      imagePath = require(`../images/gallery/${this.props.page + 1}/${this.props.contentIndex + 1}_${key + 1}.png`);
     } catch (err) {
       imagePath = "";
     }
@@ -195,54 +183,56 @@ export class InfoWindow extends Component {
 
   render() {
     return (
-      <div>
-        <div className="window-container" ref={this.windowContainerRef}>
-          <div className={`window-content window-content-${this.props.page + 1}-${this.props.contentIndex + 1}`} ref={this.windowContentRef}>
-            <div className="content content-left">
-              {this.state.galleryImages.length ? this.getImage("main-image") : null}
-              {this.state.galleryImages.length > 1 ? (
-                <div className="gallery">
-                  {this.state.galleryImages.map((image, key) => {
-                    return this.state.activeImageIndex !== key ? (
-                      <div
-                        className="image-wrapper"
-                        key={key}
-                        onMouseEnter={() => {
-                          this.mouseEnterHandler("change-image");
-                          this.setState({
-                            hoveredImageIndex: key,
-                          });
-                        }}
-                        onMouseLeave={this.mouseLeaveHandler}
-                      >
-                        {this.getImage("gallery-image", key)}
-                      </div>
-                    ) : null;
-                  })}
-                </div>
-              ) : null}
-              {this.state.imageTextBelow?.length ? <div className="text-below-image" dangerouslySetInnerHTML={{ __html: this.state.imageTextBelow[this.props.languageIndex] }}></div> : null}
-            </div>
-            {this.state.imageDescription?.length ? <div className="content content-right" dangerouslySetInnerHTML={{ __html: this.state.imageDescription[this.props.languageIndex] }}></div> : null}
-            {this.state.activeVideo ? (
-              <div className="video-container">
-                <video autoPlay ref={this.videoRef} key={`videoKey${this.props.languageIndex}${this.props.page}`}>
-                  <source src={this.state.activeVideo} type="video/mp4" />
-                </video>
-                <div
-                  className={`btn-play-pause white-box-hover-border ${this.state.videoPlaying ? "pause" : "play"}`}
-                  onMouseEnter={() => {
-                    this.mouseEnterHandler(this.state.videoPlaying ? "pause-video" : "play-video");
-                  }}
-                  onMouseLeave={this.mouseLeaveHandler}
-                ></div>
+      <div className="window-container" ref={this.windowContainerRef}>
+        <div
+          className={`window-content window-content-${this.props.page + 1}-${this.props.contentIndex + 1}`}
+          ref={this.windowContentRef}
+          key={this.props.page + this.props.contentIndex + this.state.activeImageIndex}
+        >
+          <div className="content content-left">
+            {this.state.galleryImages.length ? this.getImage("main-image") : null}
+            {this.state.galleryImages.length > 1 ? (
+              <div className="gallery">
+                {this.state.galleryImages.map((image, key) => {
+                  return this.state.activeImageIndex !== key ? (
+                    <div
+                      className="image-wrapper"
+                      key={key}
+                      onMouseEnter={() => {
+                        this.mouseEnterHandler("change-image");
+                        this.setState({
+                          hoveredImageIndex: key,
+                        });
+                      }}
+                      onMouseLeave={this.mouseLeaveHandler}
+                    >
+                      {this.getImage("gallery-image", key)}
+                    </div>
+                  ) : null;
+                })}
               </div>
             ) : null}
-            <div className={`btn btn-close ${this.state.activeVideo ? "white" : ""}`} onMouseEnter={() => this.mouseEnterHandler("close")} onMouseLeave={this.mouseLeaveHandler}>
-              <div className="white-box-hover-border"></div>
-            </div>
-            <div className="block-overlay" ref={this.blockOverlayRef}></div>
+            {this.state.imageTextBelow ? <div className="text-below-image" dangerouslySetInnerHTML={{ __html: this.state.imageTextBelow }}></div> : null}
           </div>
+          {this.state.imageDescription ? <div className="content content-right" dangerouslySetInnerHTML={{ __html: this.state.imageDescription }}></div> : null}
+          {this.state.activeVideo ? (
+            <div className="video-container">
+              <video autoPlay ref={this.videoRef} key={`videoKey${this.props.languageIndex}${this.props.page}`}>
+                <source src={this.state.activeVideo} type="video/mp4" />
+              </video>
+              <div
+                className={`btn-play-pause white-box-hover-border ${this.state.videoPlaying ? "pause" : "play"}`}
+                onMouseEnter={() => {
+                  this.mouseEnterHandler(this.state.videoPlaying ? "pause-video" : "play-video");
+                }}
+                onMouseLeave={this.mouseLeaveHandler}
+              ></div>
+            </div>
+          ) : null}
+          <div className={`btn btn-close ${this.state.activeVideo ? "white" : ""}`} onMouseEnter={() => this.mouseEnterHandler("close")} onMouseLeave={this.mouseLeaveHandler}>
+            <div className="white-box-hover-border"></div>
+          </div>
+          <div className="block-overlay" ref={this.blockOverlayRef}></div>
         </div>
       </div>
     );
