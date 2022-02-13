@@ -495,8 +495,8 @@ const hoverZones = [
           {
             imageText: [],
             description: [
-              "Dar gyvendamas Varšuvoje Daugirdas susidraugavo su choro „Lutnia“ vadovu P. Maszyński (1855-1934), dalyvaudavo jo veikloje, kartu dainuodavo. Pomėgis choriniam dainavimui išliko visą gyvenimą, grįžęs į Lietuvą, subūrė Plemborgo gyventojų chorą, ragindavo padainuoti susirinkusius svečius. ",
-              'Yet living in Warsaw Daugirdas became friends with P. Maszyński (1855-1934), the leader of the "Lutnia Choir", together they used to take part in activities including singing. The passion for choral singing remained throughout his life, after returning to Lithuania, he gathered the choir of the residents of Plemborg and also encouraged the guests to sing.',
+              `Dar gyvendamas Varšuvoje Daugirdas susidraugavo su choro „Lutnia“ vadovu P. Maszyński (1855-1934), dalyvaudavo jo veikloje, kartu dainuodavo. Pomėgis choriniam dainavimui išliko visą gyvenimą, grįžęs į Lietuvą, subūrė Plemborgo gyventojų chorą, ragindavo padainuoti susirinkusius svečius. `,
+              `Yet living in Warsaw Daugirdas became friends with P. Maszyński (1855-1934), the leader of the "Lutnia Choir", together they used to take part in activities including singing. The passion for choral singing remained throughout his life, after returning to Lithuania, he gathered the choir of the residents of Plemborg and also encouraged the guests to sing.`,
             ],
           },
         ],
@@ -574,15 +574,15 @@ const hoverZones = [
             imageText: [],
             png: true,
             description: [
-              "XX a. pradžioje Daugirdas ėmė reikštis ne tik kaip muziejininkas ir archeologas, bet ir kaip rašytojas. Išspausdino eilę novelių, scenos veikalų, vadovavo „Dainos“ draugijai, režisavo lietuviškus saviveiklinius vaidinimus, pats piešė dekoracijas. Raseinių kraštui aktualus Daugirdo scenos veikalas „Girkalnio Užgavėnės”, kuriame randame to meto etnografinių detalių ir socialinių santykių atspindžių.",
-              'At the beginning of 20th century Daugirdas began to express himself not only as a museologist and archaeologist, but also as a writer. He published a number of short stories, stage works, was the head of the society "Daina", directed Lithuanian amateur performances and drew the decorations himself. The stage work “Mardi Gras of Girkalnis”, in which we find reflections on the ethnographic details and social relations of that time, is meaningful to Raseiniai region.',
+              `XX a. pradžioje Daugirdas ėmė reikštis ne tik kaip muziejininkas ir archeologas, bet ir kaip rašytojas. Išspausdino eilę novelių, scenos veikalų, vadovavo „Dainos“ draugijai, režisavo lietuviškus saviveiklinius vaidinimus, pats piešė dekoracijas. Raseinių kraštui aktualus Daugirdo scenos veikalas „Girkalnio Užgavėnės”, kuriame randame to meto etnografinių detalių ir socialinių santykių atspindžių.`,
+              `At the beginning of 20th century Daugirdas began to express himself not only as a museologist and archaeologist, but also as a writer. He published a number of short stories, stage works, was the head of the society "Daina", directed Lithuanian amateur performances and drew the decorations himself. The stage work “Mardi Gras of Girkalnis”, in which we find reflections on the ethnographic details and social relations of that time, is meaningful to Raseiniai region.`,
             ],
           },
           {
             imageText: [],
             description: [
-              "XX a. pradžioje Daugirdas ėmė reikštis ne tik kaip muziejininkas ir archeologas, bet ir kaip rašytojas. Išspausdino eilę novelių, scenos veikalų, vadovavo „Dainos“ draugijai, režisavo lietuviškus saviveiklinius vaidinimus, pats piešė dekoracijas. Raseinių kraštui aktualus Daugirdo scenos veikalas „Girkalnio Užgavėnės”, kuriame randame to meto etnografinių detalių ir socialinių santykių atspindžių.",
-              'At the beginning of 20th century Daugirdas began to express himself not only as a museologist and archaeologist, but also as a writer. He published a number of short stories, stage works, was the head of the society "Daina", directed Lithuanian amateur performances and drew the decorations himself. The stage work “Mardi Gras of Girkalnis”, in which we find reflections on the ethnographic details and social relations of that time, is meaningful to Raseiniai region.',
+              `XX a. pradžioje Daugirdas ėmė reikštis ne tik kaip muziejininkas ir archeologas, bet ir kaip rašytojas. Išspausdino eilę novelių, scenos veikalų, vadovavo „Dainos“ draugijai, režisavo lietuviškus saviveiklinius vaidinimus, pats piešė dekoracijas. Raseinių kraštui aktualus Daugirdo scenos veikalas „Girkalnio Užgavėnės”, kuriame randame to meto etnografinių detalių ir socialinių santykių atspindžių.`,
+              `At the beginning of 20th century Daugirdas began to express himself not only as a museologist and archaeologist, but also as a writer. He published a number of short stories, stage works, was the head of the society "Daina", directed Lithuanian amateur performances and drew the decorations himself. The stage work “Mardi Gras of Girkalnis”, in which we find reflections on the ethnographic details and social relations of that time, is meaningful to Raseiniai region.`,
             ],
           },
         ],

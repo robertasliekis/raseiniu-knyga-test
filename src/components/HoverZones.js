@@ -112,8 +112,11 @@ export class HoverZones extends Component {
     const ornamentHoverZones = ["left", "right", "corner"];
 
     return (
-      <div className="hover-zones-container" ref={this.hoverZonesContainerRef} key={`hoverZonesKey${this.props.page}${this.props.language}`} 
-      //onClick={(e) => this.zoneCoordinatesClicked(e)}
+      <div
+        className="hover-zones-container"
+        ref={this.hoverZonesContainerRef}
+        key={`hoverZonesKey${this.props.page}${this.props.language}`}
+        //onClick={(e) => this.zoneCoordinatesClicked(e)}
       >
         {hoverZones[this.props.page].box.map((hoverZone, index) => {
           return (
