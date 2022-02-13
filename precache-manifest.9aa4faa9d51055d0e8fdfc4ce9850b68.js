@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4451ba45269793f39e597b7351afd79e",
+    "revision": "3ae3833812181d228c26d6f87e98bcd8",
     "url": "/raseiniu-knyga-test/index.html"
   },
   {
-    "revision": "fb9c2eb15413f17c41f4",
+    "revision": "f7255bc244b6b8293c6c",
     "url": "/raseiniu-knyga-test/static/css/main.d6642c9e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/raseiniu-knyga-test/static/js/2.a1e93cd8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fb9c2eb15413f17c41f4",
-    "url": "/raseiniu-knyga-test/static/js/main.e54835e9.chunk.js"
+    "revision": "f7255bc244b6b8293c6c",
+    "url": "/raseiniu-knyga-test/static/js/main.38a2e684.chunk.js"
   },
   {
     "revision": "0146ed13d36c0b4a206b",
