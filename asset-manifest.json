@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/raseiniu-knyga-test/static/css/main.d6642c9e.chunk.css",
-    "main.js": "/raseiniu-knyga-test/static/js/main.1ec5c98b.chunk.js",
-    "main.js.map": "/raseiniu-knyga-test/static/js/main.1ec5c98b.chunk.js.map",
+    "main.js": "/raseiniu-knyga-test/static/js/main.e54835e9.chunk.js",
+    "main.js.map": "/raseiniu-knyga-test/static/js/main.e54835e9.chunk.js.map",
     "runtime-main.js": "/raseiniu-knyga-test/static/js/runtime-main.ad67afee.js",
     "runtime-main.js.map": "/raseiniu-knyga-test/static/js/runtime-main.ad67afee.js.map",
     "static/js/2.a1e93cd8.chunk.js": "/raseiniu-knyga-test/static/js/2.a1e93cd8.chunk.js",
     "static/js/2.a1e93cd8.chunk.js.map": "/raseiniu-knyga-test/static/js/2.a1e93cd8.chunk.js.map",
     "index.html": "/raseiniu-knyga-test/index.html",
-    "precache-manifest.27d12ddcc32c771a5eec2ddba5b50789.js": "/raseiniu-knyga-test/precache-manifest.27d12ddcc32c771a5eec2ddba5b50789.js",
+    "precache-manifest.f2a19b26e10cb4f5ac1b4c8910883553.js": "/raseiniu-knyga-test/precache-manifest.f2a19b26e10cb4f5ac1b4c8910883553.js",
     "service-worker.js": "/raseiniu-knyga-test/service-worker.js",
     "static/css/main.d6642c9e.chunk.css.map": "/raseiniu-knyga-test/static/css/main.d6642c9e.chunk.css.map",
     "static/js/2.a1e93cd8.chunk.js.LICENSE.txt": "/raseiniu-knyga-test/static/js/2.a1e93cd8.chunk.js.LICENSE.txt",
@@ -59,6 +59,6 @@
     "static/js/runtime-main.ad67afee.js",
     "static/js/2.a1e93cd8.chunk.js",
     "static/css/main.d6642c9e.chunk.css",
-    "static/js/main.1ec5c98b.chunk.js"
+    "static/js/main.e54835e9.chunk.js"
   ]
 }
