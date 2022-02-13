@@ -14,8 +14,8 @@ export class InfoWindow extends Component {
       activeImageIndex: 0,
       hoveredImageIndex: 0,
       galleryImages: [],
-      imageDescription: [],
-      imageTextBelow: [],
+      imageDescription: "",
+      imageTextBelow: "",
       activeVideo: null,
       videoPlaying: false,
     };
@@ -87,8 +87,8 @@ export class InfoWindow extends Component {
     this.setState({
       hoveredType: "",
       galleryImages: [],
-      imageDescription: null,
-      imageTextBelow: null,
+      imageDescription: "",
+      imageTextBelow: "",
       videoPlaying: false,
       activeVideo: null,
       hoveredImageIndex: 0,
@@ -147,16 +147,23 @@ export class InfoWindow extends Component {
   }
 
   setContent() {
-    let loadedContent = content[this.props.page].box[this.props.contentIndex];
+    let loadedPageContent = content && content.length > 0 && content[this.props.page] ? content[this.props.page] : null;
+    let loadedContent = loadedPageContent && loadedPageContent.box && loadedPageContent.box[this.props.contentIndex] ? loadedPageContent.box[this.props.contentIndex] : null;
 
-    if (loadedContent) {
-      if (loadedContent.video) {
+    if (loadedContent && Object.keys(loadedContent).length !== 0) {
+      if (loadedContent.video && loadedContent.footage) {
         this.setState({ activeVideo: loadedContent.footage, videoPlaying: true });
         this.props.mouseEnterMovie(true);
       } else {
-        let galleryImages = loadedContent.images;
-        let imageDescription = galleryImages[this.state.activeImageIndex]?.description[this.props.languageIndex];
-        let imageTextBelow = galleryImages[this.state.activeImageIndex]?.imageText[this.props.languageIndex];
+        let galleryImages = loadedContent && loadedContent.images ? loadedContent.images : [];
+        let imageDescription =
+          galleryImages.length && galleryImages[this.state.activeImageIndex]?.description && galleryImages[this.state.activeImageIndex]?.description.length > 0
+            ? galleryImages[this.state.activeImageIndex]?.description[this.props.languageIndex]
+            : "";
+        let imageTextBelow =
+          galleryImages.length && galleryImages[this.state.activeImageIndex]?.imageText && galleryImages[this.state.activeImageIndex]?.imageText.length
+            ? galleryImages[this.state.activeImageIndex]?.imageText[this.props.languageIndex]
+            : "";
 
         this.setState({
           galleryImages: galleryImages,
@@ -190,8 +197,8 @@ export class InfoWindow extends Component {
           key={this.props.page + this.props.contentIndex + this.state.activeImageIndex}
         >
           <div className="content content-left">
-            {this.state.galleryImages.length ? this.getImage("main-image") : null}
-            {this.state.galleryImages.length > 1 ? (
+            {this.state.galleryImages && this.state.galleryImages.length ? this.getImage("main-image") : null}
+            {this.state.galleryImages && this.state.galleryImages.length > 1 ? (
               <div className="gallery">
                 {this.state.galleryImages.map((image, key) => {
                   return this.state.activeImageIndex !== key ? (
